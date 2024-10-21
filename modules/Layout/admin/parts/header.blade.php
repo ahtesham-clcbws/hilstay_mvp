@@ -1,5 +1,5 @@
 <?php
-$user = Auth::user();
+$user = auth()->user();
 [$notifications,$countUnread] = getNotify();
 
 $languages = \Modules\Language\Models\Language::getActive();
@@ -9,7 +9,7 @@ $theme = \Modules\Theme\ThemeManager::currentProvider();
 
 <div class="header-logo flex-shrink-0">
     <h3 class="logo-text">
-        <a href="{{route('admin.index')}}">{{ env('APP_NAME' || 'Hillstay') }}
+        <a href="{{route('admin.index')}}">{{ env('APP_NAME', 'Hillstay') }}
             <span class="app-version">{{$theme::$version}}</span>
         </a>
     </h3>
