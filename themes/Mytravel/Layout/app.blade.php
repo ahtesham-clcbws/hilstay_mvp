@@ -32,7 +32,7 @@
     <link href="{{ asset('themes/mytravel/libs/custombox/custombox.min.css') }}" rel="stylesheet">
 
     <link href="{{ asset('themes/mytravel/dist/frontend/css/notification.css') }}" rel="newest stylesheet">
-    <link href="{{ asset('themes/mytravel/dist/frontend/css/app.css?_ver='.config('app.asset_version')) }}" rel="stylesheet">
+    <link href="{{ asset('themes/mytravel/dist/frontend/css/app.css?_ver='.time()) }}" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="{{ asset("libs/daterange/daterangepicker.css") }}" >
     <!-- Fonts -->
