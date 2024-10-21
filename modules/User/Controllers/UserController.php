@@ -4,13 +4,9 @@ namespace Modules\User\Controllers;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\Rule;
 use Matrix\Exception;
-use Modules\Boat\Models\Boat;
 use Modules\Booking\Models\Service;
-use Modules\Car\Models\Car;
 use Modules\Event\Models\Event;
-use Modules\Flight\Models\Flight;
 use Modules\FrontendController;
-use Modules\Hotel\Models\Hotel;
 use Modules\Space\Models\Space;
 use Modules\Tour\Models\Tour;
 use Modules\User\Events\NewVendorRegistered;
@@ -210,12 +206,8 @@ class UserController extends FrontendController
             try {
                 Service::where('author_id',$user->id)->delete();
                 Tour::where('author_id',$user->id)->delete();
-                Car::where('author_id',$user->id)->delete();
                 Space::where('author_id',$user->id)->delete();
-                Hotel::where('author_id',$user->id)->delete();
                 Event::where('author_id',$user->id)->delete();
-                Boat::where('author_id',$user->id)->delete();
-                Flight::where('author_id',$user->id)->delete();
                 $user->sendEmailPermanentlyDelete();
                 $user->delete();
                 \DB::commit();

@@ -6,11 +6,8 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
-use Modules\Boat\Models\Boat;
 use Modules\Booking\Models\Service;
 use Modules\Event\Models\Event;
-use Modules\Flight\Models\Flight;
-use Modules\Hotel\Models\Hotel;
 use Modules\Space\Models\Space;
 use Modules\Tour\Models\Tour;
 use Modules\User\Helpers\PermissionHelper;
@@ -46,7 +43,7 @@ class Updater300
         }
 
         // Update bc_services
-        foreach ([Hotel::class,Tour::class,Space::class,Event::class,Boat::class,Flight::class] as $class){
+        foreach ([Tour::class,Space::class,Event::class] as $class){
 
             $tbName = (new $class)->getTable();
             $type = (new $class)->type;

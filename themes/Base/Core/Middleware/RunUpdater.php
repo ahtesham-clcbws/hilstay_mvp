@@ -11,18 +11,10 @@ use Illuminate\Support\Facades\Schema;
 use Modules\Booking\Models\Booking;
 use Modules\Booking\Models\Service;
 use Modules\Booking\Models\ServiceTranslation;
-use Modules\Car\Models\Car;
-use Modules\Car\Models\CarTranslation;
 use Modules\Core\Models\NotificationPush;
 use Modules\Core\Models\Settings;
 use Modules\Event\Models\Event;
 use Modules\Event\Models\EventTranslation;
-use Modules\Flight\Models\BookingPassengers;
-use Modules\Flight\Models\Flight;
-use Modules\Flight\Models\FlightSeat;
-use Modules\Hotel\Models\Hotel;
-use Modules\Hotel\Models\HotelRoom;
-use Modules\Hotel\Models\HotelTranslation;
 use Modules\Location\Models\LocationCategory;
 use Modules\Location\Models\LocationCategoryTranslation;
 use Modules\Review\Models\Review;
@@ -269,22 +261,6 @@ class RunUpdater
                 $table->string('ical_import_url')->nullable();
             }
         });
-        Schema::table(Hotel::getTableName(), function (Blueprint $table) {
-            if (!Schema::hasColumn(Hotel::getTableName(), 'ical_import_url')) {
-                $table->string('ical_import_url')->nullable();
-            }
-        });
-        Schema::table(Car::getTableName(), function (Blueprint $table) {
-            if (!Schema::hasColumn(Car::getTableName(), 'ical_import_url')) {
-                $table->string('ical_import_url')->nullable();
-            }
-        });
-
-        Schema::table(CarTranslation::getTableName(), function (Blueprint $table) {
-            if (Schema::hasColumn(CarTranslation::getTableName(), 'extra_price')) {
-                $table->dropColumn('extra_price');
-            }
-        });
         Schema::table(SpaceTranslation::getTableName(), function (Blueprint $table) {
             if (Schema::hasColumn(SpaceTranslation::getTableName(), 'extra_price')) {
                 $table->dropColumn('extra_price');
@@ -320,11 +296,6 @@ class RunUpdater
                 $booking->save();
             }
         }
-        Schema::table(HotelRoom::getTableName(), function (Blueprint $table) {
-            if (!Schema::hasColumn(HotelRoom::getTableName(), 'ical_import_url')) {
-                $table->string('ical_import_url')->nullable();
-            }
-        });
 
         Settings::store('update_to_160', true);
         Artisan::call('cache:clear');
@@ -890,27 +861,6 @@ class RunUpdater
     }
     protected function removeForeignKey(){
         try {
-            $flightForeignKey = $this->getForeignKeyByTable(Flight::getTableName());
-            Schema::table(Flight::getTableName(),function(Blueprint $blueprint)use ($flightForeignKey){
-                foreach ($flightForeignKey as $key){
-                    $blueprint->dropForeign($key);
-
-                }
-            });
-            $flightSeatForeignKey = $this->getForeignKeyByTable(FlightSeat::getTableName());
-            Schema::table(FlightSeat::getTableName(),function(Blueprint $blueprint) use ($flightSeatForeignKey){
-                foreach ($flightSeatForeignKey as $key){
-                    $blueprint->dropForeign($key);
-
-                }
-            });
-            $bookingPassengersForeignKey = $this->getForeignKeyByTable(FlightSeat::getTableName());
-            Schema::table(BookingPassengers::getTableName(),function(Blueprint $blueprint) use ($bookingPassengersForeignKey){
-                foreach ($bookingPassengersForeignKey as $key){
-                    $blueprint->dropForeign($key);
-
-                }
-            });
         }catch (\Exception $exception){
         }
 

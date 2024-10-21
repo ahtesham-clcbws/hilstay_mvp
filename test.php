@@ -1,11 +1,7 @@
 <?php
 $modules = [
-    'boat',
-    'car',
     'tour',
-    'hotel',
-    'event',
-    'flight'
+    'event'
 ];
 $folderNames = [
     'bookingHistory',

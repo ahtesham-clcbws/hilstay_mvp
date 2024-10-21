@@ -14,7 +14,6 @@ use Modules\Booking\Emails\StatusUpdatedEmail;
 use Modules\Booking\Events\BookingUpdatedEvent;
 use Modules\Booking\Traits\HasPassenger;
 use Modules\Coupon\Models\CouponBookings;
-use Modules\Hotel\Models\HotelRoomBooking;
 use Modules\Space\Models\Space;
 use Modules\Tour\Models\Tour;
 use App\User;
@@ -893,12 +892,7 @@ class Booking extends BaseModel
 				->whereNotIn('status', self::$notAcceptedStatus)
 				->where('start_date','>=',now())
 				->get();
-			if($service_type=='room'){
-				$bookingData = HotelRoomBooking::where('room_id',$id)->whereHas('booking',function (Builder $query){
-					$query->whereNotIn('status', self::$notAcceptedStatus)
-						->where('start_date','>=',now());
-				})->get();
-			}
+                
 			if (!empty($bookingData)) {
 				foreach ($bookingData as $item => $value) {
 					if($service_type=='room'){
@@ -1067,9 +1061,6 @@ class Booking extends BaseModel
             return 0;
         }
         switch ($this->object_model){
-            case "car":
-            case "boat":
-                return 0;
             case "tour":
             default:
                 return $this->total_guests;

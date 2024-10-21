@@ -3,7 +3,6 @@ namespace Modules\Api\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Modules\Booking\Models\Service;
-use Modules\Flight\Controllers\FlightController;
 
 class SearchController extends Controller
 {
@@ -116,10 +115,6 @@ class SearchController extends Controller
         if(empty($row))
         {
             return $this->sendError(__("Resource not found"));
-        }
-
-        if($type=='flight'){
-            return app()->make(FlightController::class)->getData(\request(),$id);
         }
 
         return $this->sendSuccess([

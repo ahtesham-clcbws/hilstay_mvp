@@ -19,7 +19,6 @@ Route::get('services','SearchController@searchServices')->name('api.service-sear
 Route::get('{type}/search','SearchController@search')->name('api.search2');
 Route::get('{type}/detail/{id}','SearchController@detail')->name('api.detail');
 Route::get('{type}/availability/{id}','SearchController@checkAvailability')->name('api.service.check_availability');
-Route::get('boat/availability-booking/{id}','SearchController@checkBoatAvailability')->name('api.service.checkBoatAvailability');
 
 Route::get('{type}/filters','SearchController@getFilters')->name('api.service.filter');
 Route::get('{type}/form-search','SearchController@getFormSearch')->name('api.service.form');
