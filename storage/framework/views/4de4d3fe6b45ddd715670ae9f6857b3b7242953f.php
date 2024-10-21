@@ -32,7 +32,7 @@
     <link href="<?php echo e(asset('themes/mytravel/libs/custombox/custombox.min.css')); ?>" rel="stylesheet">
 
     <link href="<?php echo e(asset('themes/mytravel/dist/frontend/css/notification.css')); ?>" rel="newest stylesheet">
-    <link href="<?php echo e(asset('themes/mytravel/dist/frontend/css/app.css?_ver='.config('app.asset_version'))); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('themes/mytravel/dist/frontend/css/app.css)); ?>" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="<?php echo e(asset("libs/daterange/daterangepicker.css")); ?>" >
     <!-- Fonts -->
@@ -56,7 +56,7 @@
     <?php echo $__env->make('Layout::parts.global-script', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <!-- Styles -->
     <?php echo $__env->yieldPushContent('css'); ?>
-    
+
     <link href="<?php echo e(route('core.style.customCss')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/carousel-2/owl.carousel.css')); ?>" rel="stylesheet">
     <?php if(setting_item_with_lang('enable_rtl')): ?>
