@@ -1,7 +1,6 @@
 <?php
 namespace Themes\Mytravel\Template\Blocks;
 
-use Modules\Flight\Models\SeatType;
 use Modules\Template\Blocks\BaseBlock;
 use Modules\Location\Models\Location;
 use Modules\Media\Helpers\FileHelper;
@@ -134,7 +133,6 @@ class FormSearchAllService extends BaseBlock
         $model['style'] = !empty($model['style']) ? $model['style'] :  "style_1";
         $model['list_slider'] = $model['list_slider'] ?? "";
         $model['modelBlock'] = $model;
-        $model['seatType'] =  SeatType::get();
 
         return $this->view('Template::frontend.blocks.form-search-all-service.'.$model['style'], $model);
     }
