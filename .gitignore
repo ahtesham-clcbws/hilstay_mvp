@@ -1,4 +1,6 @@
 node_modules
+public/dist/frontend
+public/dist/admin
 !public/dist/frontend/module/template/preview/*
 /public/hot
 /public/storage
@@ -8,6 +10,7 @@ storage/app/*
 !storage/app/public/
 storage/app/public/*
 !storage/app/public/demo/
+/vendor
 /.idea/*
 !.idea/codeStyles/*
 /resources/ckeditor/node_modules/
@@ -25,4 +28,6 @@ yarn-error.log
 storage/bc.php
 storage/pro.php
 storage/installed
+public/themes/*/dist
+
 *.zip
