@@ -27,7 +27,6 @@
                     <div class="col-md-9">
                         @include('Tour::admin/tour/tour-content')
                         @include('Tour::admin/tour/tour-location')
-                        @include('Hotel::admin.hotel.surrounding')
 
                     @if(is_default_lang())
                             @include('Tour::admin/tour/pricing')

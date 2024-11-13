@@ -168,4 +168,3 @@
         </div>
     </div>
 @endif
-@includeIf("Hotel::frontend.layouts.details.hotel-surrounding")

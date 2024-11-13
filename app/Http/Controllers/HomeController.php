@@ -2,8 +2,6 @@
 namespace App\Http\Controllers;
 
 use App\User;
-use Modules\Hotel\Models\Hotel;
-use Modules\Location\Models\LocationCategory;
 use Modules\Page\Models\Page;
 use Modules\News\Models\NewsCategory;
 use Modules\News\Models\Tag;

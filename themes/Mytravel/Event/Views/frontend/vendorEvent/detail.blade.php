@@ -31,7 +31,6 @@
                     </div>
                     <div class="tab-pane fade" id="nav-tour-location">
                         @include('Event::admin/event/location',["is_smart_search"=>"1"])
-                        @include('Hotel::admin.hotel.surrounding')
 
                     </div>
                     <div class="tab-pane fade" id="nav-tour-pricing">

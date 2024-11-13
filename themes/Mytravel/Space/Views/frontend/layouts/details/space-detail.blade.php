@@ -84,7 +84,6 @@
 @endif
 @include('Space::frontend.layouts.details.space-attributes')
 @include('Space::frontend.layouts.details.space-faqs')
-@includeIf("Hotel::frontend.layouts.details.hotel-surrounding")
 @if($row->map_lat && $row->map_lng)
     <div class="border-bottom py-4">
         <h5 class="font-size-21 font-weight-bold text-dark mb-4">

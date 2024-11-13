@@ -32,8 +32,8 @@
         </div>
     </div>
     @if($row->is_featured == "1")
-        <div class="position-absolute top-0 left-0 pt-3 pl-3 featured">
-            <span class="badge font-weight-normal badge-pill px-4 mr-3 py-2">{{ __("Featured") }}</span>
+        <div class="position-absolute top-0 left-0 text-center featured">
+            <span class="badge font-weight-normal badge-pill px-4 py-2">{{ __("Featured") }}</span>
         </div>
     @endif
     <div class="location">

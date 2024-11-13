@@ -135,6 +135,5 @@
     </div>
 @endif
 @include('Tour::frontend.layouts.details.tour-faqs')
-@includeIf("Hotel::frontend.layouts.details.hotel-surrounding")
 
 
