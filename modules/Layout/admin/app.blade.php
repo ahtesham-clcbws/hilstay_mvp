@@ -56,14 +56,14 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 copy-right">
-                        {{date('Y')}} &copy; {{__('Booking Core by')}} <a
-                            href="{{__('https://www.bookingcore.co')}}" target="_blank"
-                        >{{__('BookingCore Team')}}</a>
+                        {{date('Y')}} &copy; {{__('Developed By')}} <a
+                            href="{{__('https://www.clcbws.com')}}" target="_blank"
+                        >{{__('Broadway Web Services')}}</a>
                     </div>
                     <div class="col-md-6">
                         <div class="text-md-right footer-links d-none d-sm-block">
-                            <a href="{{__('https://www.bookingcore.co')}}" target="_blank">{{__('About Us')}}</a>
-                            <a href="{{__('https://m.me/bookingcore')}}" target="_blank">{{__('Contact Us')}}</a>
+                            <a href="{{__('https://www.clcbws.com/company')}}" target="_blank">{{__('About Us')}}</a>
+                            <a href="{{__('https://www.clcbws.com/get-in-touch')}}" target="_blank">{{__('Contact Us')}}</a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,6 @@
 </div>
 
 @include('Media::browser')
-@include('Pro::admin.upgrade-modal')
 
 <!-- Scripts -->
 {!! \App\Helpers\Assets::css(true) !!}
