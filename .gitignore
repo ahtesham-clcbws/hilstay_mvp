@@ -5,6 +5,8 @@ node_modules
 /public/uploads/0000
 /storage/*.key
 storage/app/*
+storage/framework
+storage/debugbar
 !storage/app/public/demo/
 /.idea/*
 !.idea/codeStyles/*

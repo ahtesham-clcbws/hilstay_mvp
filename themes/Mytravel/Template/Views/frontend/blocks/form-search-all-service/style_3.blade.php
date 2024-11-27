@@ -11,7 +11,7 @@
                 <ul class="nav tab-nav flex-nowrap tab-nav-shadow justify-content-start @if(!empty($single_form_search)) d-none @endif" role="tablist">
                     @if(!empty($service_types))
                         @php $number = 0; @endphp
-                        @foreach ($service_types as $service_type)
+                        @foreach (array_reverse($service_types) as $service_type)
                             @php
                                 $allServices = get_bookable_services();
                                 if(empty($allServices[$service_type])) continue;
