@@ -1,5 +1,5 @@
 @if($list_item)
-<div class="bravo-testimonial testimonial-block testimonial-v1 border-bottom border-color-8">
+<div class="bravo-testimonial testimonial-block testimonial-v1">
     <div class="container space-1">
         <div class="w-md-80 w-lg-50 text-center mx-md-auto my-3">
             <h2 class="section-title text-black font-size-30 font-weight-bold mb-0">
