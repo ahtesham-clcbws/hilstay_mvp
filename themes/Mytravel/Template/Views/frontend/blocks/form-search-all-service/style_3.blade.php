@@ -23,7 +23,7 @@
                                     <div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
                                         <figure class="ie-height-40 d-md-block mr-md-3">
                                             <i class="icon {{ $module->getServiceIconFeatured() }} font-size-3"></i>
-                                        </figure>
+                                        </figure>$service_types
                                         <span class="tabtext mt-2 mt-md-0 font-weight-semi-bold">
                                               {{ !empty($modelBlock["title_for_".$service_type]) ? $modelBlock["title_for_".$service_type] : $module->getModelName() }}
                                         </span>

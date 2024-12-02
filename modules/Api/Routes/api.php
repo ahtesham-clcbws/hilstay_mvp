@@ -48,7 +48,7 @@ Route::group(['prefix' => 'user', 'middleware' => ['api']], function ($router) {
     Route::get('booking-history', 'UserController@getBookingHistory')->name("api.user.booking_history");
     Route::post('/wishlist','UserController@handleWishList')->name("api.user.wishList.handle");
     Route::get('/wishlist','UserController@indexWishlist')->name("api.user.wishList.index");
-    Route::post('/permanently_delete','UserController@permanentlyDelete')->name("user.permanently.delete");
+    Route::post('/permanently_delete','UserController@permanentlyDelete');
 
 });
 
