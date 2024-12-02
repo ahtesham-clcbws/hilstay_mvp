@@ -223,6 +223,7 @@ class SpaceController extends AdminController
             'image_id',
             'banner_image_id',
             'gallery',
+            'bedroom',
             'bed',
             'bathroom',
             'square',

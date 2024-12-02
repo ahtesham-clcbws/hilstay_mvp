@@ -995,6 +995,7 @@ class Space extends Bookable
     public function dataForApi($forSingle = false){
         $data = parent::dataForApi($forSingle);
         $data['max_guests'] = $this->max_guests;
+        $data['bedroom'] = $this->bedroom;
         $data['bed'] = $this->bed;
         $data['bathroom'] = $this->bathroom;
         $data['square'] = $this->square;

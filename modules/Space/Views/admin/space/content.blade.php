@@ -83,20 +83,26 @@
 <div class="panel">
     <div class="panel-title"><strong>{{__("Extra Info")}}</strong></div>
     <div class="panel-body">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="row rows-col-md-4">
+            <div class="col">
+                <div class="form-group">
+                    <label>{{__("No. Bedroom")}}</label>
+                    <input type="number" value="{{$row->bedroom}}" placeholder="{{__("Example: 3")}}" name="bedroom" class="form-control">
+                </div>
+            </div>
+            <div class="col">
                 <div class="form-group">
                     <label>{{__("No. Bed")}}</label>
                     <input type="number" value="{{$row->bed}}" placeholder="{{__("Example: 3")}}" name="bed" class="form-control">
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <div class="form-group">
                     <label>{{__("No. Bathroom")}}</label>
                     <input type="number" value="{{$row->bathroom}}" placeholder="{{__("Example: 5")}}" name="bathroom" class="form-control">
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col">
                 <div class="form-group">
                     <label>{{__("Square")}}</label>
                     <input type="number" value="{{$row->square}}" placeholder="{{__("Example: 100")}}" name="square" class="form-control">
