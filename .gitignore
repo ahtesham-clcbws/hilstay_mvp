@@ -6,7 +6,6 @@ node_modules
 /storage/*.key
 storage/app/*
 storage/framework
-storage/logs
 storage/debugbar
 !storage/app/public/demo/
 /.idea/*
