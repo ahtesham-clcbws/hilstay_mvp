@@ -18,8 +18,10 @@
                                 if(empty($allServices[$service_type])) continue;
                                 $module = new $allServices[$service_type];
                             @endphp
+
+                            @if($service_type == 'space')
                             <li class="nav-item" role="bravo_{{$service_type}}">
-                                <a class="nav-link font-weight-medium @if($number == 0) active @endif pl-md-5 pl-3" id="bravo_{{$service_type}}-tab" data-toggle="pill" href="#bravo_{{$service_type}}" role="tab" aria-controls="bravo_{{$service_type}}" aria-selected="true">
+                                <a class="nav-link font-weight-medium active pl-md-5 pl-3" id="bravo_{{$service_type}}-custom-tab" data-toggle="pill" href="#bravo_{{$service_type}}" role="tab" aria-controls="bravo_{{$service_type}}" aria-selected="true">
                                     <div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
                                         <figure class="ie-height-40 d-md-block mr-md-3">
                                             <i class="icon {{ $module->getServiceIconFeatured() }} font-size-3"></i>
@@ -30,11 +32,26 @@
                                     </div>
                                 </a>
                             </li>
+                            @endif
+                            @if($service_type == 'event')
+                            <li class="nav-item" role="bravo_{{$service_type}}">
+                                <a class="nav-link font-weight-medium pl-md-5 pl-3" id="bravo_{{$service_type}}-custom-tab" data-toggle="pill" href="#bravo_{{$service_type}}" role="tab" aria-controls="bravo_{{$service_type}}" aria-selected="true">
+                                    <div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
+                                        <figure class="ie-height-40 d-md-block mr-md-3">
+                                            <i class="icon {{ $module->getServiceIconFeatured() }} font-size-3"></i>
+                                        </figure>
+                                        <span class="tabtext mt-2 mt-md-0 font-weight-semi-bold">
+                                              {{ !empty($modelBlock["title_for_".$service_type]) ? $modelBlock["title_for_".$service_type] : $module->getModelName() }}
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            @endif
                             @php $number++; @endphp
                         @endforeach
                     @endif
                 </ul>
-                <div class="tab-content hero-tab-pane">
+                <div class="tab-content hero-custom-tab-pane">
                     @if(!empty($service_types))
                         @php $number = 0; @endphp
                         @foreach (array_reverse($service_types) as $service_type)
@@ -43,7 +60,7 @@
                                 if(empty($allServices[$service_type])) continue;
                             @endphp
                             @if($service_type == 'space')
-                            <div class="tab-pane fade active show" id="bravo_{{$service_type}}" role="tabpanel" aria-labelledby="bravo_{{$service_type}}-tab">
+                            <div class="tab-pane fade active show" id="bravo_{{$service_type}}" role="tabpanel" aria-labelledby="bravo_{{$service_type}}-custom-tab">
                                 <div class="p-3 gradient-overlay-half-white-gradient">
                                     <div class="card border-0 tab-shadow">
                                         <div class="card-body">
@@ -61,7 +78,7 @@
                                 if(empty($allServices[$service_type])) continue;
                             @endphp
                             @if($service_type == 'event')
-                            <div class="tab-pane fade" id="bravo_{{$service_type}}" role="tabpanel" aria-labelledby="bravo_{{$service_type}}-tab">
+                            <div class="tab-pane fade" id="bravo_{{$service_type}}" role="tabpanel" aria-labelledby="bravo_{{$service_type}}-custom-tab">
                                 <div class="p-3 gradient-overlay-half-white-gradient">
                                     <div class="card border-0 tab-shadow">
                                         <div class="card-body">
