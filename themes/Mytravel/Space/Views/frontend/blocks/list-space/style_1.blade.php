@@ -16,8 +16,8 @@
             @endforeach
         </div>
 
-        <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mt-4">
-            <a class="p-2 font-size-17 text-center text-white font-weight-bold"style="background-color: #103815 !important;" href="{{ route('space.search') }}"">
+        <div class="w-100 text-center">
+            <a class="px-4 py-3 font-size-17 text-center text-white font-weight-bold rounded"style="background-color: #103815 !important;" href="{{ route('space.search') }}"">
                 Explore more <i class="flaticon-right-arrow ml-2"></i>
             </a>
         </div>
