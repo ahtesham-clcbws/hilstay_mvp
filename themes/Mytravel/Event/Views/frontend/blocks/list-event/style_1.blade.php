@@ -17,7 +17,7 @@
         </div>
 
         <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-5 mt-4">
-            <a class="p-2 font-size-17 text-center text-white font-weight-bold" href="{{ route('space.event') }}"">
+            <a class="p-2 font-size-17 text-center text-white font-weight-bold" href="{{ route('event.search') }}"">
                 Explore more <i class="flaticon-right-arrow ml-2"></i>
             </a>
         </div>
