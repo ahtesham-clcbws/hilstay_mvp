@@ -12,6 +12,7 @@
                     @if(!empty($service_types))
                         @php $number = 0; @endphp
                         @foreach (array_reverse($service_types) as $service_type)
+
                             @php
                                 $allServices = get_bookable_services();
                                 if(empty($allServices[$service_type])) continue;
