@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
     /*
     |--------------------------------------------------------------------------
@@ -13,6 +14,15 @@ use Illuminate\Support\Facades\Route;
     | contains the "web" middleware group. Now create something great!
     |
     */
+
+Route::get('artisan/{command}', function ($command) {
+    try {
+        $run = Artisan::call($command);
+        return print_r($run);
+    } catch (\Throwable $th) {
+        throw $th;
+    }
+});
 Route::get('/intro','LandingpageController@index');
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index')->name('home');
