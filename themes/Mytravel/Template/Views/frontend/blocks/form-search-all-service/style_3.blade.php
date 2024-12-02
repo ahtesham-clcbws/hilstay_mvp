@@ -33,6 +33,16 @@
                                 </a>
                             </li>
                             @endif
+                            @php $number++; @endphp
+                        @endforeach
+                        @foreach (array_reverse($service_types) as $service_type)
+
+                            @php
+                                $allServices = get_bookable_services();
+                                if(empty($allServices[$service_type])) continue;
+                                $module = new $allServices[$service_type];
+                            @endphp
+
                             @if($service_type == 'event')
                             <li class="nav-item" role="bravo_{{$service_type}}">
                                 <a class="nav-link font-weight-medium pl-md-5 pl-3" id="bravo_{{$service_type}}-custom-tab" data-toggle="pill" href="#bravo_{{$service_type}}" role="tab" aria-controls="bravo_{{$service_type}}" aria-selected="true">
