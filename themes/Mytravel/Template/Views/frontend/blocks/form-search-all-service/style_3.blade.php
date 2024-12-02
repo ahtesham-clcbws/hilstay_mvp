@@ -43,7 +43,7 @@
                                 if(empty($allServices[$service_type])) continue;
                             @endphp
                             @if($service_type == 'space')
-                            <div class="tab-pane fade @if($number == 0) active show @endif" id="bravo_{{$service_type}}" role="tabpanel" aria-labelledby="bravo_{{$service_type}}-tab">
+                            <div class="tab-pane fade active show" id="bravo_{{$service_type}}" role="tabpanel" aria-labelledby="bravo_{{$service_type}}-tab">
                                 <div class="p-3 gradient-overlay-half-white-gradient">
                                     <div class="card border-0 tab-shadow">
                                         <div class="card-body">
@@ -61,7 +61,7 @@
                                 if(empty($allServices[$service_type])) continue;
                             @endphp
                             @if($service_type == 'event')
-                            <div class="tab-pane fade @if($number == 0) active show @endif" id="bravo_{{$service_type}}" role="tabpanel" aria-labelledby="bravo_{{$service_type}}-tab">
+                            <div class="tab-pane fade" id="bravo_{{$service_type}}" role="tabpanel" aria-labelledby="bravo_{{$service_type}}-tab">
                                 <div class="p-3 gradient-overlay-half-white-gradient">
                                     <div class="card border-0 tab-shadow">
                                         <div class="card-body">
