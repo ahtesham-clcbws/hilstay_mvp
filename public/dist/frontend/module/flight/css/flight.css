@@ -58,7 +58,7 @@
   content: "";
   width: 3px;
   height: 20px;
-  background: #5191FA;
+  background: #103815;
   float: left;
   position: relative;
   top: -2px;
@@ -110,13 +110,13 @@
 }
 .bravo_wrap .bravo_search_flight .bravo_filter .g-filter-item .item-content .btn-more-item {
   font-size: 14px;
-  color: #5191FA;
+  color: #103815;
   padding: 0;
   text-decoration: none;
 }
 .bravo_wrap .bravo_search_flight .bravo_filter .g-filter-item .item-content .btn-apply-price-range {
   font-size: 14px;
-  color: #5191FA;
+  color: #103815;
   margin-top: 20px;
   font-weight: 600;
   padding: 0;
@@ -125,18 +125,18 @@
 }
 .bravo_wrap .bravo_search_flight .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from, .bravo_wrap .bravo_search_flight .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to, .bravo_wrap .bravo_search_flight .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single {
   font-size: 11px;
-  background-color: #5191FA;
+  background-color: #103815;
 }
 .bravo_wrap .bravo_search_flight .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-bar {
   top: 25px;
   height: 12px;
-  background-color: #5191FA;
+  background-color: #103815;
 }
 .bravo_wrap .bravo_search_flight .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-handle > i:first-child {
-  background-color: #5191FA;
+  background-color: #103815;
 }
 .bravo_wrap .bravo_search_flight .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from:before, .bravo_wrap .bravo_search_flight .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to:before, .bravo_wrap .bravo_search_flight .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single:before {
-  border-top-color: #5191FA;
+  border-top-color: #103815;
 }
 .bravo_wrap .bravo_search_flight .bravo_filter .g-filter-item .item-title.e-close .fa {
   transform: rotate(180deg) !important;

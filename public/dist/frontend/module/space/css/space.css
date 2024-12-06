@@ -58,7 +58,7 @@
   content: "";
   width: 3px;
   height: 20px;
-  background: #5191FA;
+  background: #103815;
   float: left;
   position: relative;
   top: -2px;
@@ -110,13 +110,13 @@
 }
 .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .btn-more-item {
   font-size: 14px;
-  color: #5191FA;
+  color: #103815;
   padding: 0;
   text-decoration: none;
 }
 .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .btn-apply-price-range {
   font-size: 14px;
-  color: #5191FA;
+  color: #103815;
   margin-top: 20px;
   font-weight: 600;
   padding: 0;
@@ -125,18 +125,18 @@
 }
 .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from, .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to, .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single {
   font-size: 11px;
-  background-color: #5191FA;
+  background-color: #103815;
 }
 .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-bar {
   top: 25px;
   height: 12px;
-  background-color: #5191FA;
+  background-color: #103815;
 }
 .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-handle > i:first-child {
-  background-color: #5191FA;
+  background-color: #103815;
 }
 .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from:before, .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to:before, .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single:before {
-  border-top-color: #5191FA;
+  border-top-color: #103815;
 }
 .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-title.e-close .fa {
   transform: rotate(180deg) !important;
@@ -169,7 +169,7 @@
   top: -47px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,7 +292,7 @@
   margin: 10px 15px 0;
 }
 .bravo_wrap .bravo_search_space .bravo-list-item .list-item .item-loop .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_search_space .bravo-list-item .list-item .item-loop .service-review .review {
   margin-left: 30px;
@@ -523,7 +523,7 @@
   margin-top: 8px;
 }
 .bravo_wrap .bravo_detail_space .bravo_content .g-header .review-score .head .left .text-rating {
-  color: #5191FA;
+  color: #103815;
   font-size: 14px;
 }
 .bravo_wrap .bravo_detail_space .bravo_content .g-header .review-score .head .score {
@@ -531,7 +531,7 @@
   float: right;
   margin-left: 20px;
   padding: 10px 10px 0px 10px;
-  background: #5191fa;
+  background: #103815;
   border-radius: 4px;
   color: #fff;
   font-size: 30px;
@@ -550,7 +550,7 @@
   bottom: 0;
   left: -8px;
   border: 15px solid transparent;
-  border-bottom: 25px solid #5191FA;
+  border-bottom: 25px solid #103815;
 }
 .bravo_wrap .bravo_detail_space .bravo_content .g-header .review-score .foot {
   color: #5E6D77;
@@ -656,7 +656,7 @@
 }
 .bravo_wrap .bravo_detail_space .bravo_content .g-overview ul li:before {
   content: "";
-  border: 1px solid #5191FA;
+  border: 1px solid #103815;
   width: 8px;
   height: 8px;
   display: inline-block;
@@ -685,7 +685,7 @@
   position: relative;
 }
 .bravo_wrap .bravo_detail_space .bravo_content .g-attributes .list-attributes .item i.icon-default {
-  color: #5191fa;
+  color: #103815;
 }
 .bravo_wrap .bravo_detail_space .bravo_content .g-attributes .list-attributes .item img {
   max-width: 30px;
@@ -905,7 +905,7 @@
   top: -47px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1028,7 +1028,7 @@
   margin: 10px 15px 0;
 }
 .bravo_wrap .bravo_detail_space .bravo-list-space-related .item-loop .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_detail_space .bravo-list-space-related .item-loop .service-review .review {
   margin-left: 30px;
@@ -1172,7 +1172,7 @@
 }
 .bravo_wrap .bravo_detail_space .bravo_single_book {
   border: 1px solid #D7DCE3;
-  border-top: 5px solid #5191FA;
+  border-top: 5px solid #103815;
   border-radius: 0 0 4px 4px;
   background: #FFF;
   position: relative;
@@ -1348,8 +1348,8 @@
   cursor: pointer;
 }
 .bravo_wrap .bravo_detail_space .bravo_single_book .nav-enquiry .enquiry-item.active span {
-  border-bottom: solid 1px #5191FA;
-  color: #5191FA;
+  border-bottom: solid 1px #103815;
+  color: #103815;
 }
 .bravo_wrap .bravo_detail_space .bravo_single_book .form-enquiry {
   padding: 20px;
@@ -1494,7 +1494,7 @@
   padding: 20px;
   border-bottom: solid 1px #d7dce3;
   display: flex;
-  border-top: solid 5px #5191fa;
+  border-top: solid 5px #103815;
   border-left: solid 1px #d7dce3;
   border-right: solid 1px #d7dce3;
 }
@@ -1511,8 +1511,8 @@
   cursor: pointer;
 }
 .bravo_wrap .bravo_detail_space .hotel_rooms_form .nav-enquiry .enquiry-item.active span {
-  border-bottom: solid 1px #5191FA;
-  color: #5191FA;
+  border-bottom: solid 1px #103815;
+  color: #103815;
 }
 .bravo_wrap .bravo_detail_space .hotel_rooms_form .form-enquiry {
   padding: 20px;
@@ -1601,7 +1601,7 @@
   font-size: 16px;
 }
 .cart-total-group li.line-end-total .val {
-  color: #5191FA;
+  color: #103815;
   font-weight: 500;
   font-size: 16px;
 }
@@ -1798,7 +1798,7 @@
   width: 100%;
   margin-right: -15px;
   border-radius: 0;
-  background: #5191FA;
+  background: #103815;
   border: none;
   text-transform: uppercase;
   font-weight: 500;
@@ -1990,18 +1990,18 @@
 }
 .has-search-map .bravo-filter-price .irs--flat .irs-from, .has-search-map .bravo-filter-price .irs--flat .irs-to, .has-search-map .bravo-filter-price .irs--flat .irs-single {
   font-size: 11px;
-  background-color: #5191FA;
+  background-color: #103815;
 }
 .has-search-map .bravo-filter-price .irs--flat .irs-bar {
   top: 25px;
   height: 12px;
-  background-color: #5191FA;
+  background-color: #103815;
 }
 .has-search-map .bravo-filter-price .irs--flat .irs-handle > i:first-child {
-  background-color: #5191FA;
+  background-color: #103815;
 }
 .has-search-map .bravo-filter-price .irs--flat .irs-from:before, .has-search-map .bravo-filter-price .irs--flat .irs-to:before, .has-search-map .bravo-filter-price .irs--flat .irs-single:before {
-  border-top-color: #5191FA;
+  border-top-color: #103815;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop {
@@ -2023,7 +2023,7 @@
   top: -47px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2146,7 +2146,7 @@
   margin: 10px 15px 0;
 }
 .has-search-map .bravo_search_map .results_map .item-loop .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .has-search-map .bravo_search_map .results_map .item-loop .service-review .review {
   margin-left: 30px;

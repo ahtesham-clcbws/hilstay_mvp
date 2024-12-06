@@ -209,7 +209,7 @@
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-trip-ideas .trip-idea .trip-idea-category {
   font-size: 14px;
-  color: #5191FA;
+  color: #103815;
   letter-spacing: 0;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-trip-ideas .trip-idea h2 {
@@ -265,8 +265,8 @@
   text-decoration: none;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module .location-module-nav li a.active {
-  border-bottom: 1px solid #5191FA;
-  color: #5191FA;
+  border-bottom: 1px solid #103815;
+  color: #103815;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module .view-more {
   border: 1px solid #D7DCE3;
@@ -298,7 +298,7 @@
   top: -25px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -412,7 +412,7 @@
   margin: 10px 15px 0;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-hotel .item-loop .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-hotel .item-loop .service-review .review {
   margin-left: 30px;
@@ -565,7 +565,7 @@
   top: -25px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -671,7 +671,7 @@
   display: none;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-hotel .item-loop-list .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-hotel .item-loop-list .service-review .review {
   margin-left: 30px;
@@ -714,7 +714,7 @@
   font-weight: 500;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-hotel .item-loop-list .service-review-pc .head .left .text-rating {
-  color: #5191FA;
+  color: #103815;
   font-size: 14px;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-hotel .item-loop-list .service-review-pc .head .score {
@@ -722,7 +722,7 @@
   float: right;
   margin-left: 12px;
   padding: 7px 7px 0px 9px;
-  background: #5191fa;
+  background: #103815;
   border-radius: 4px;
   color: #fff;
   font-size: 20px;
@@ -741,7 +741,7 @@
   bottom: 0;
   left: -8px;
   border: 15px solid transparent;
-  border-bottom: 15px solid #5191FA;
+  border-bottom: 15px solid #103815;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-hotel .item-loop-list .service-review-pc .foot {
   color: #5E6D77;
@@ -1018,7 +1018,7 @@
   color: #FFFFFF;
   font-weight: 500;
   z-index: 8;
-  background: #5191fa;
+  background: #103815;
   border-radius: 0 3px 3px 0;
   padding: 6px 10px;
 }
@@ -1210,7 +1210,7 @@
   top: -47px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1333,7 +1333,7 @@
   margin: 10px 15px 0;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-space .item-loop .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-space .item-loop .service-review .review {
   margin-left: 30px;
@@ -1428,7 +1428,7 @@
   top: -25px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1514,7 +1514,7 @@
   margin: 10px 15px 0;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-car .item-loop .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-car .item-loop .service-review .review {
   margin-left: 30px;
@@ -1851,7 +1851,7 @@
   top: -25px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1930,7 +1930,7 @@
   font-size: 13px;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-boat .item-loop .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_detail_location .bravo_content .g-location-module #module-boat .item-loop .service-review .review {
   margin-left: 15px;

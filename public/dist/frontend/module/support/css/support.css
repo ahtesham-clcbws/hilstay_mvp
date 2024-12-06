@@ -73,7 +73,7 @@
   top: -1px;
   border-radius: 50%;
   margin-right: 15px;
-  background: #5191fa;
+  background: #103815;
 }
 .widget_category ul li a {
   font-weight: 500;
@@ -135,7 +135,7 @@
 
 .ticket-card-action {
   border: 1px solid #D7DCE3;
-  border-top: 5px solid #5191fa;
+  border-top: 5px solid #103815;
   border-radius: 0 0 4px 4px;
   background: #FFF;
 }

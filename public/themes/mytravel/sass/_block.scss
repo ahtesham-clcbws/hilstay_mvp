@@ -301,7 +301,7 @@
                }
 
                .owl-dot.active {
-                   background: #5191fa;
+                   background: ;
                }
            }
 
@@ -351,7 +351,7 @@
                        outline: none;
                        margin-top: 20px;
                        font-size: 50px;
-                       color: #5191fa;
+                       color: ;
                        @media (max-width: 1023px) {
                            margin-top: 0;
                        }
@@ -577,7 +577,7 @@
                        border-radius: 3px;
                        border: 1px solid #fff;
                        &:hover{
-                           color: #5191FA;
+                           color: ;
                            background: #fff;
                        }
                        @media(max-width: 1023px){
@@ -1121,7 +1121,7 @@
                    top: 2px;
                    width: 5px;
                    height: 8px;
-                   border: solid #5191FA;
+                   border: solid ;
                    border-width: 0 2px 2px 0;
                    -webkit-transform: rotate(45deg);
                    transform: rotate(45deg);
@@ -1249,7 +1249,7 @@
             }
 
             .count-display {
-                color: #5191FA;
+                color: ;
                 min-width: 25px;
                 text-align: center;
 
@@ -1258,7 +1258,7 @@
                     background: none;
                     width: 35px;
                     text-align: center;
-                    color: #5191fa;
+                    color: ;
                     margin-left: 15px;
                 }
             }
@@ -1301,7 +1301,7 @@
             }
 
             .count-display {
-                color: #5191FA;
+                color: ;
                 min-width: 25px;
                 text-align: center;
 
@@ -1310,7 +1310,7 @@
                     background: none;
                     width: 35px;
                     text-align: center;
-                    color: #5191fa;
+                    color: ;
                     margin-left: 15px;
                 }
             }

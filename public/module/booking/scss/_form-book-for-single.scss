@@ -68,7 +68,7 @@
 }
 .bravo_single_book {
     border: 1px solid #D7DCE3;
-    border-top: 5px solid #5191FA;
+    border-top: 5px solid ;
     border-radius: 0 0 4px 4px;
     background: #FFF;
     position: relative;
@@ -263,8 +263,8 @@
                }
             &.active{
                 span{
-                    border-bottom: solid 1px #5191FA;
-                    color: #5191FA;
+                    border-bottom: solid 1px ;
+                    color: ;
                 }
             }
         }
@@ -419,7 +419,7 @@
         padding: 20px;
         border-bottom: solid 1px #d7dce3;
         display: flex;
-        border-top: solid 5px #5191fa;
+        border-top: solid 5px ;
         border-left: solid 1px #d7dce3;
         border-right: solid 1px #d7dce3;
         .enquiry-item{
@@ -435,8 +435,8 @@
             }
             &.active{
                 span{
-                    border-bottom: solid 1px #5191FA;
-                    color: #5191FA;
+                    border-bottom: solid 1px ;
+                    color: ;
                 }
             }
         }

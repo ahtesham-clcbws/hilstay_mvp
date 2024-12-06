@@ -196,13 +196,13 @@
   position: relative;
 }
 .bravo_wrap .bravo_user_profile .sidebar-menu ul li.active > a, .bravo_wrap .bravo_user_profile .sidebar-menu ul li:hover > a {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_user_profile .sidebar-menu ul li.active > a i, .bravo_wrap .bravo_user_profile .sidebar-menu ul li:hover > a i {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_user_profile .sidebar-menu ul li.active.has-children > i:after, .bravo_wrap .bravo_user_profile .sidebar-menu ul li:hover.has-children > i:after {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_user_profile .sidebar-menu ul li a {
   border: 0;
@@ -485,7 +485,7 @@
   margin-bottom: 0 !important;
 }
 .bravo_wrap .bravo_user_profile .form-add-service .nav-tabs {
-  background: #5191FA;
+  background: #103815;
   padding: 15px 10px;
 }
 .bravo_wrap .bravo_user_profile .form-add-service .nav-tabs a {
@@ -894,8 +894,8 @@
   display: block;
 }
 .bravo_wrap .bravo_user_profile .booking-history-manager .tabbable .ht-nav-tabs li.active a {
-  color: #5191FA;
-  border-bottom: 3px solid #5191FA;
+  color: #103815;
+  border-bottom: 3px solid #103815;
 }
 .bravo_wrap .bravo_user_profile .booking-history-manager .btn-info-booking {
   color: #FFF;
@@ -920,7 +920,7 @@
   padding: 2px 5px;
   background: #f3f3f3;
   border-color: #d0d0d0;
-  border-left: solid 3px #5191fa;
+  border-left: solid 3px #103815;
 }
 .bravo_wrap .bravo_user_profile .booking-history-manager .dropdown-menu a {
   display: block;
@@ -931,7 +931,7 @@
   min-width: 175px;
 }
 .bravo_wrap .bravo_user_profile .booking-history-manager .dropdown-menu a:hover {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_user_profile .booking-history-manager .dropdown-menu a i {
   position: relative;
@@ -1062,7 +1062,7 @@
 .bravo_wrap .bravo_user_profile .bravo-pagination ul li.active span {
   background: transparent !important;
   background-color: transparent !important;
-  color: #5191fa !important;
+  color: #103815 !important;
 }
 .bravo_wrap .bravo_user_profile .bravo-user-dashboard .dashboard-price-info .dashboard-item {
   padding: 21px 32px;

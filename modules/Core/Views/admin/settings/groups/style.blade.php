@@ -11,7 +11,7 @@
                 <div class="form-group">
                     <label>{{__("Main color")}}</label>
                     <div class="form-controls">
-                        <input type="text" name="style_main_color" value="{{setting_item('style_main_color','#5191FA')}}" class="has-colorpicker d-none">
+                        <input type="text" name="style_main_color" value="{{setting_item('style_main_color','')}}" class="has-colorpicker d-none">
                     </div>
                 </div>
                 @endif

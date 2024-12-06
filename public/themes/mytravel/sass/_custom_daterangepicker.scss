@@ -49,7 +49,7 @@ body .daterangepicker {
             text-align: center;
             width: 100%;
             height: 100%;
-            color: #5191fa;
+            color: ;
             font-size: 42px;
         }
     }
@@ -148,10 +148,10 @@ body .daterangepicker {
                             border-bottom: none;
                         }
                         &.start-date{
-                            border-left: solid 2px #5191fa;
+                            border-left: solid 2px ;
                         }
                         &.end-date{
-                            border-right: solid 2px #5191fa;
+                            border-right: solid 2px ;
                         }
                         &.disabled{
                             color: #D7DCE3;
@@ -273,8 +273,8 @@ body .daterangepicker {
         &.start-date {
             background: rgba(81, 145, 250, 0.2);
             &:not(.end-date) {
-                -webkit-box-shadow: -3px 0 0 #5191FA;
-                box-shadow: -3px 0 0 #5191FA;
+                -webkit-box-shadow: -3px 0 0 ;
+                box-shadow: -3px 0 0 ;
             }
             &.today .date {
                 border: none;
@@ -289,8 +289,8 @@ body .daterangepicker {
         &.end-date {
             background: rgba(81, 145, 250, 0.2);
             &:not(.start-date) {
-                -webkit-box-shadow: 3px 0 0 #5191FA;
-                box-shadow: 3px 0 0 #5191FA;
+                -webkit-box-shadow: 3px 0 0 ;
+                box-shadow: 3px 0 0 ;
             }
             &.today .date {
                 border: none;

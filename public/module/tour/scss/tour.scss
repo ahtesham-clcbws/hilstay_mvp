@@ -65,7 +65,7 @@
                     content: '';
                     width: 3px;
                     height: 20px;
-                    background: #5191FA;
+                    background: ;
                     float: left;
                     position: relative;
                     top: -2px;
@@ -115,13 +115,13 @@
                     }
                     .btn-more-item {
                         font-size: 14px;
-                        color: #5191FA;
+                        color: ;
                         padding: 0;
                         text-decoration: none;
                     }
                     .btn-apply-price-range {
                         font-size: 14px;
-                        color: #5191FA;
+                        color: ;
                         margin-top: 20px;
                         font-weight: 600;
                         padding: 0;
@@ -131,18 +131,18 @@
                     .bravo-filter-price {
                         .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
                             font-size: 11px;
-                            background-color: #5191FA;
+                            background-color: ;
                         }
                         .irs--flat .irs-bar {
                             top: 25px;
                             height: 12px;
-                            background-color: #5191FA;
+                            background-color: ;
                         }
                         .irs--flat .irs-handle > i:first-child {
-                            background-color: #5191FA;
+                            background-color: ;
                         }
                         .irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
-                            border-top-color: #5191FA;
+                            border-top-color: ;
                         }
                     }
                 }
@@ -318,7 +318,7 @@
                                   margin-top: 8px;
                               }
                               .text-rating {
-                                  color: #5191FA;
+                                  color: ;
                                   font-size: 14px;
                               }
                           }
@@ -327,7 +327,7 @@
                               float: right;
                               margin-left: 20px;
                               padding: 10px 10px 0px 10px;
-                              background: #5191fa;
+                              background: ;
                               border-radius: 4px;
                               color: #fff;
                               font-size: 30px;
@@ -345,7 +345,7 @@
                                   bottom: 0;
                                   left: -8px;
                                   border: 15px solid transparent;
-                                  border-bottom: 25px solid #5191FA;
+                                  border-bottom: 25px solid ;
                               }
                           }
                       }
@@ -443,7 +443,7 @@
                           }
                           &:before {
                               content: '';
-                              border: 1px solid #5191FA;
+                              border: 1px solid ;
                               width: 8px;
                               height: 8px;
                               display: inline-block;
@@ -469,7 +469,7 @@
                               font-size: 16px;
                               position: relative;
                               &.icon-default{
-                                  color: #5191fa;
+                                  color: ;
                               }
                           }
                           @media(max-width: 768px){
@@ -732,7 +732,7 @@
                 font-size: 16px;
             }
             .val{
-                color:#5191FA;
+                color:;
                 font-weight: 500;
                 font-size: 16px;
             }

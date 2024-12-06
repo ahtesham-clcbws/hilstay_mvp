@@ -147,7 +147,7 @@ $main_color =setting_item('style_main_color','#5291fa')
             }
             .btn.btn-primary{
 
-                background: #5191FA;
+                background: ;
                 color: white;
             }
             .mt20{

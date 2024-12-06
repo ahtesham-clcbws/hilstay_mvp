@@ -39,7 +39,7 @@
         .servive-name{
             font-size: 18px;
             font-weight: bold;
-            color: #5191fa;
+            color: ;
 
         }
         .service-location{

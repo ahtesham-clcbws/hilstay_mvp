@@ -71,7 +71,7 @@
   border-radius: 0.2rem;
 }
 .btn.btn-primary {
-  background: #5191FA;
+  background: #103815;
 }
 .btn.btn-danger {
   background: #FA5636;
@@ -109,7 +109,7 @@
   transform: translate(-50%, -50%);
   width: 50px;
   height: 6px;
-  background: #5191FA;
+  background: #103815;
   border-radius: 5px;
   margin-left: -25px;
   animation: st-load 1.8s ease-in-out infinite;
@@ -502,7 +502,7 @@ input.form-control {
 .frontend-page .modal.login .modal-content .modal-body .form-submit {
   height: 45px;
   width: 100%;
-  background: #5191FA;
+  background: #103815;
   color: #FFF;
   text-transform: uppercase;
   font-size: 14px;
@@ -642,7 +642,7 @@ body .daterangepicker.loading:after {
   text-align: center;
   width: 42px;
   height: 42px;
-  color: #5191fa;
+  color: #103815;
   font-size: 42px;
   animation: fa-spin 2s infinite linear;
   margin-left: -21px;
@@ -728,10 +728,10 @@ body .daterangepicker .drp-calendar .calendar-table tbody tr td.start-date, body
   border-bottom: none;
 }
 body .daterangepicker .drp-calendar .calendar-table tbody tr td.start-date {
-  border-left: solid 2px #5191fa;
+  border-left: solid 2px #103815;
 }
 body .daterangepicker .drp-calendar .calendar-table tbody tr td.end-date {
-  border-right: solid 2px #5191fa;
+  border-right: solid 2px #103815;
 }
 body .daterangepicker .drp-calendar .calendar-table tbody tr td.disabled {
   color: #D7DCE3;
@@ -846,7 +846,7 @@ body .daterangepicker .table-condensed .td-date.start-date {
   background: rgba(81, 145, 250, 0.2);
 }
 body .daterangepicker .table-condensed .td-date.start-date:not(.end-date) {
-  box-shadow: -3px 0 0 #5191FA;
+  box-shadow: -3px 0 0 #103815;
 }
 body .daterangepicker .table-condensed .td-date.start-date.today .date {
   border: none;
@@ -861,7 +861,7 @@ body .daterangepicker .table-condensed .td-date.end-date {
   background: rgba(81, 145, 250, 0.2);
 }
 body .daterangepicker .table-condensed .td-date.end-date:not(.start-date) {
-  box-shadow: 3px 0 0 #5191FA;
+  box-shadow: 3px 0 0 #103815;
 }
 body .daterangepicker .table-condensed .td-date.end-date.today .date {
   border: none;
@@ -1323,7 +1323,7 @@ Pricing Section
   line-height: 50px;
   font-size: 72px;
   font-weight: 500;
-  color: #5191FA;
+  color: #103815;
 }
 @media (max-width: 766px) {
   .bravo-reviews .review-box .review-box-score .review-score {
@@ -1344,7 +1344,7 @@ Pricing Section
   font-size: 14px;
 }
 .bravo-reviews .review-box .review-box-score .review-score-base span {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo-reviews .review-box .review-sumary .item {
   display: flex;
@@ -1386,7 +1386,7 @@ Pricing Section
   top: 0;
   left: 0;
   height: 8px;
-  background: #5191FA;
+  background: #103815;
   border-radius: 10px;
 }
 .bravo-reviews .review-box .review-sumary .item .progress .percent.green {
@@ -1564,7 +1564,7 @@ Pricing Section
   padding: 30px;
   border: 1px solid #D7DCE3;
   background: #f9f9f9;
-  border-top: solid 4px #5191FA;
+  border-top: solid 4px #103815;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -1656,7 +1656,7 @@ Pricing Section
   }
 }
 .bravo-reviews .review-form .btn {
-  background: #5191FA;
+  background: #103815;
   color: #FFF;
   border: none;
   box-shadow: none;
@@ -1674,7 +1674,7 @@ Pricing Section
   background: #f5f5f5;
   padding: 15px 20px;
   margin-top: 15px;
-  border-left: solid 4px #5191fa;
+  border-left: solid 4px #103815;
   margin-bottom: 15px;
 }
 
@@ -1759,7 +1759,7 @@ Pricing Section
   color: #FFFFFF;
   font-weight: 500;
   z-index: 8;
-  background: #5191fa;
+  background: #103815;
   border-radius: 0 3px 3px 0;
   padding: 6px 10px;
 }
@@ -2149,7 +2149,7 @@ Pricing Section
   content: "";
   height: 2px;
   width: 80px;
-  background: var(--link-color, #5191FA);
+  background: var(--link-color, #103815);
   bottom: 0;
   left: 0;
 }
@@ -2199,7 +2199,7 @@ Pricing Section
   right: -2px;
   bottom: -2px;
   z-index: 8;
-  background: var(--link-color, #5191FA);
+  background: var(--link-color, #103815);
   padding: 5px 10px 5px 20px;
   margin-top: 0;
   opacity: 0.9;
@@ -2374,12 +2374,12 @@ Pricing Section
 .bravo_wrap .page-template-content .bravo-featured-item.style2 .number-circle {
   width: 70px;
   height: 70px;
-  border: 2px solid #5191FA;
+  border: 2px solid #103815;
   border-radius: 50%;
   text-align: center;
   line-height: 69px;
   font-size: 40px;
-  color: #5191FA;
+  color: #103815;
   transition: all 0.3s;
   display: inline-block;
 }
@@ -2402,7 +2402,7 @@ Pricing Section
   padding: 0px;
 }
 .bravo_wrap .page-template-content .bravo-featured-item.style3 .featured-item:hover {
-  border-color: #5191FA;
+  border-color: #103815;
 }
 .bravo_wrap .page-template-content .bravo-featured-item.style4 {
   background-color: #f6f9ff;
@@ -2562,7 +2562,7 @@ Pricing Section
 }
 .bravo_wrap .page-template-content .bravo-call-to-action.style_2 .context .btn-more {
   padding: 10px 25px;
-  color: #5191fa;
+  color: #103815;
   margin-top: 20px;
 }
 .bravo_wrap .page-template-content .bravo-call-to-action.style_3 {
@@ -2673,7 +2673,7 @@ Pricing Section
 }
 .bravo_wrap .page-template-content .bravo-list-locations .list-item .destination-item .image .content .desc {
   display: inline-block;
-  background: #5191FA;
+  background: #103815;
   border-radius: 100px;
   font-size: 14px !important;
   color: #FFFFFF;
@@ -2742,7 +2742,7 @@ Pricing Section
   opacity: 0.4;
 }
 .bravo_wrap .page-template-content .bravo-list-locations.style_2 .list-item .destination-item:hover .title {
-  background: #5191fa;
+  background: #103815;
   color: #fff;
 }
 .bravo_wrap .page-template-content .bravo-list-locations.style_2 .list-item .effect {
@@ -2802,7 +2802,7 @@ Pricing Section
   opacity: 0.2;
 }
 .bravo_wrap .page-template-content .bravo-list-locations.style_3 .list-item .destination-item:hover .desc {
-  background: #5191fa;
+  background: #103815;
   color: #fff;
 }
 .bravo_wrap .page-template-content .bravo-list-locations.style_4 {
@@ -2992,7 +2992,7 @@ Pricing Section
   outline: none;
 }
 .bravo_wrap .page-template-content .bravo-box-category-tour .owl-dot.active {
-  background: #5191fa;
+  background: #103815;
 }
 .bravo_wrap .page-template-content .bravo-client-feedback {
   background: #f6f9ff;
@@ -3040,7 +3040,7 @@ Pricing Section
   outline: none;
   margin-top: 20px;
   font-size: 50px;
-  color: #5191fa;
+  color: #103815;
 }
 @media (max-width: 1023px) {
   .bravo_wrap .page-template-content .bravo-client-feedback .owl-nav .owl-prev, .bravo_wrap .page-template-content .bravo-client-feedback .owl-nav .owl-next {
@@ -3088,7 +3088,7 @@ Pricing Section
   top: -47px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3211,7 +3211,7 @@ Pricing Section
   margin: 10px 15px 0;
 }
 .bravo_wrap .page-template-content .bravo-list-space .item-loop .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .page-template-content .bravo-list-space .item-loop .service-review .review {
   margin-left: 30px;
@@ -3756,7 +3756,7 @@ Pricing Section
   border: 1px solid #fff;
 }
 .bravo_wrap .page-template-content .bravo-offer .item a.btn-default:hover {
-  color: #5191FA;
+  color: #103815;
   background: #fff;
 }
 @media (max-width: 1023px) {
@@ -3910,7 +3910,7 @@ Pricing Section
   top: -25px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3996,7 +3996,7 @@ Pricing Section
   margin: 10px 15px 0;
 }
 .bravo_wrap .page-template-content .bravo-list-car .item-loop .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .page-template-content .bravo-list-car .item-loop .service-review .review {
   margin-left: 30px;
@@ -4549,7 +4549,7 @@ Pricing Section
   display: block;
   width: 100%;
   height: 2px;
-  background: #5191fa;
+  background: #103815;
   bottom: 0;
   transition: all 0.2s;
   z-index: -1;
@@ -4641,7 +4641,7 @@ Pricing Section
   top: -25px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4720,7 +4720,7 @@ Pricing Section
   font-size: 13px;
 }
 .bravo_wrap .page-template-content .bravo-list-boat .item-loop .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .page-template-content .bravo-list-boat .item-loop .service-review .review {
   margin-left: 15px;
@@ -4976,7 +4976,7 @@ Pricing Section
   height: 100%;
   width: 100%;
   border-radius: 0px 5px 5px 0px;
-  background: #5191fa;
+  background: #103815;
   border: none;
   text-transform: uppercase;
   font-weight: 500;
@@ -5016,7 +5016,7 @@ Pricing Section
   top: 50%;
   margin-top: -18px;
   font-size: 35px;
-  color: #5191fa;
+  color: #103815;
   left: 15px;
 }
 @media (max-width: 766px) {
@@ -5029,7 +5029,7 @@ Pricing Section
   position: absolute;
   right: 10px;
   top: 50px;
-  color: #5191FA;
+  color: #103815;
   border-top: 0.4em solid;
   border-right: 0.2em solid transparent;
   border-left: 0.32em solid transparent;
@@ -5089,7 +5089,7 @@ Pricing Section
   box-shadow: none;
   padding: 0;
   font-size: 16px;
-  color: #5191FA;
+  color: #103815;
   position: relative;
   left: -5px;
   height: 25px !important;
@@ -5104,7 +5104,7 @@ Pricing Section
 }
 .bravo_wrap .bravo_form .form-content .render {
   font-size: 16px;
-  color: #5191fa;
+  color: #103815;
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
@@ -5123,7 +5123,7 @@ Pricing Section
   position: absolute;
   right: 10px;
   top: 10px;
-  color: #5191fa;
+  color: #103815;
   border-top: 0.4em solid;
   border-right: 0.3em solid transparent;
   border-left: 0.3em solid transparent;
@@ -5132,7 +5132,7 @@ Pricing Section
   border: none;
   box-shadow: none;
   font-size: 16px;
-  color: #5191FA;
+  color: #103815;
   position: relative;
   left: 0 !important;
   padding: 0 !important;
@@ -5140,11 +5140,11 @@ Pricing Section
   background: transparent;
 }
 .bravo_wrap .bravo_form .smart-search:not(.normal-control) .parent_text::-moz-placeholder, .bravo_wrap .bravo_form .smart-search:not(.normal-control) .form-control::-moz-placeholder, .bravo_wrap .bravo_form .input-search:not(.normal-control) .parent_text::-moz-placeholder, .bravo_wrap .bravo_form .input-search:not(.normal-control) .form-control::-moz-placeholder {
-  color: #5191fa;
+  color: #103815;
   opacity: 1;
 }
 .bravo_wrap .bravo_form .smart-search:not(.normal-control) .parent_text::placeholder, .bravo_wrap .bravo_form .smart-search:not(.normal-control) .form-control::placeholder, .bravo_wrap .bravo_form .input-search:not(.normal-control) .parent_text::placeholder, .bravo_wrap .bravo_form .input-search:not(.normal-control) .form-control::placeholder {
-  color: #5191fa;
+  color: #103815;
   opacity: 1;
 }
 .bravo_wrap .bravo_form .smart-search:not(.normal-control) .parent_text[readonly], .bravo_wrap .bravo_form .smart-search:not(.normal-control) .form-control[readonly], .bravo_wrap .bravo_form .input-search:not(.normal-control) .parent_text[readonly], .bravo_wrap .bravo_form .input-search:not(.normal-control) .form-control[readonly] {
@@ -5266,7 +5266,7 @@ Pricing Section
   top: -25px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5380,7 +5380,7 @@ Pricing Section
   margin: 10px 15px 0;
 }
 .bravo_wrap .bravo-list-hotel .item-loop .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo-list-hotel .item-loop .service-review .review {
   margin-left: 30px;
@@ -5533,7 +5533,7 @@ Pricing Section
   top: -25px;
   color: #fff;
   font-size: 15px;
-  background-color: #5191fa;
+  background-color: #103815;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5639,7 +5639,7 @@ Pricing Section
   display: none;
 }
 .bravo_wrap .bravo-list-hotel .item-loop-list .service-review .rate {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo-list-hotel .item-loop-list .service-review .review {
   margin-left: 30px;
@@ -5682,7 +5682,7 @@ Pricing Section
   font-weight: 500;
 }
 .bravo_wrap .bravo-list-hotel .item-loop-list .service-review-pc .head .left .text-rating {
-  color: #5191FA;
+  color: #103815;
   font-size: 14px;
 }
 .bravo_wrap .bravo-list-hotel .item-loop-list .service-review-pc .head .score {
@@ -5690,7 +5690,7 @@ Pricing Section
   float: right;
   margin-left: 12px;
   padding: 7px 7px 0px 9px;
-  background: #5191fa;
+  background: #103815;
   border-radius: 4px;
   color: #fff;
   font-size: 20px;
@@ -5709,7 +5709,7 @@ Pricing Section
   bottom: 0;
   left: -8px;
   border: 15px solid transparent;
-  border-bottom: 15px solid #5191FA;
+  border-bottom: 15px solid #103815;
 }
 .bravo_wrap .bravo-list-hotel .item-loop-list .service-review-pc .foot {
   color: #5E6D77;
@@ -6037,7 +6037,7 @@ Pricing Section
 }
 .bravo_wrap .select-guests-dropdown .dropdown-item-row .count-display,
 .bravo_wrap .select-seat-type-dropdown .dropdown-item-row .count-display {
-  color: #5191FA;
+  color: #103815;
   min-width: 25px;
   text-align: center;
 }
@@ -6047,7 +6047,7 @@ Pricing Section
   background: none;
   width: 35px;
   text-align: center;
-  color: #5191fa;
+  color: #103815;
   margin-left: 15px;
 }
 .bravo_wrap .select-guests-dropdown .dropdown-item-row .val,
@@ -6143,7 +6143,7 @@ Pricing Section
   top: 2px;
   width: 5px;
   height: 8px;
-  border: solid #5191FA;
+  border: solid #103815;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
@@ -6995,7 +6995,7 @@ ul, ol {
   }
 }
 .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li.active {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li > .fa {
   position: absolute;
@@ -7045,10 +7045,10 @@ ul, ol {
   visibility: visible;
 }
 .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li:hover > a {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li:hover > .fa {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_header .content .header-right {
   position: relative;
@@ -7531,12 +7531,12 @@ ul, ol {
   transition: all 0.3s;
 }
 .bravo_wrap .bravo_footer .main-footer .nav-footer .context ul li a:hover {
-  color: #5191FA;
+  color: #103815;
 }
 .bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact {
   border-left-width: 3px;
   padding-left: 20px;
-  border-left-color: #5191fa;
+  border-left-color: #103815;
   border-left-style: solid;
   margin-bottom: 30px;
 }
@@ -7616,15 +7616,15 @@ ul, ol {
   cursor: pointer;
 }
 .bravo-pagination ul li a.current, .bravo-pagination ul li span.current {
-  border: 1px solid #5191FA !important;
+  border: 1px solid #103815 !important;
   border-radius: 3px;
   background: transparent !important;
-  color: #5191FA !important;
+  color: #103815 !important;
 }
 .bravo-pagination ul li.active a, .bravo-pagination ul li.active span {
-  border: 1px solid #5191FA !important;
+  border: 1px solid #103815 !important;
   background: transparent !important;
-  color: #5191FA !important;
+  color: #103815 !important;
 }
 .bravo-pagination .count-string {
   font-size: 14px;

@@ -85,7 +85,7 @@
   color: #fa5636;
 }
 .profile-summary .meta-info.style2 li.review_count i {
-  color: #5191fa;
+  color: #103815;
 }
 .profile-summary .verified-status {
   text-align: center;
@@ -156,9 +156,9 @@
   border: none;
 }
 .page-profile-content .profile-service-tabs .nav li a.active {
-  color: #5191FA;
+  color: #103815;
   border: none;
-  border-bottom: 2px solid #5191FA;
+  border-bottom: 2px solid #103815;
 }
 .page-profile-content .profile-service-tabs .bravo-list-tour {
   margin-top: 30px;
