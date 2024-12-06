@@ -4,16 +4,16 @@ return [
     "media"=>[
         "groups"=>[
             "default"=>[
-                "ext"=>["jpg",'jpeg','png','gif','bmp','docx','JPG'],
-                "mime"=>["image/png","image/jpeg","image/gif","image/bmp",'application/vnd.openxmlformats-officedocument.wordprocessingml.document'],
-                "max_size"=>20000000, // In Bytes, default is 20MB,
+                "ext"=>["jpg",'jpeg','png','gif','bmp','docx','JPG', 'svg', 'SVG'],
+                "mime"=>["image/png","image/jpeg","image/gif","image/bmp", "image/svg+xml", 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'],
+                "max_size"=>2000000, // In Bytes, default is 20MB,
                 "max_width"=>env('ALLOW_IMAGE_MAX_WIDTH',4000),
                 "max_height"=>env('ALLOW_IMAGE_MAX_HEIGHT',4000)
             ],
             "image"=>[
-                "ext"=>["jpg",'jpeg','png','gif','bmp','JPG'],
-                "mime"=>["image/png","image/jpeg","image/gif","image/bmp"],
-                "max_size"=>20000000, // In Bytes, default is 20MB,
+                "ext"=>["jpg",'jpeg','png','gif','bmp','JPG', 'svg', 'SVG'],
+                "mime"=>["image/png","image/jpeg","image/gif","image/bmp", "image/svg+xml"],
+                "max_size"=>2000000, // In Bytes, default is 20MB,
                 "max_width"=>env('ALLOW_IMAGE_MAX_WIDTH',4000),
                 "max_height"=>env('ALLOW_IMAGE_MAX_HEIGHT',4000)
             ],
