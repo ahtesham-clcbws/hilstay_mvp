@@ -40,6 +40,3 @@ Route::get(config('admin.admin_route_prefix') . '/logs', '\Rap2hpoutre\LaravelLo
 Route::get('/install', 'InstallerController@redirectToRequirement')->name('LaravelInstaller::welcome');
 Route::get('/install/environment', 'InstallerController@redirectToWizard')->name('LaravelInstaller::environment');
 
-
-Route::get('/property/{propertyId}/availability', function () use ($propertyId) {
-})->name('property.availability');
