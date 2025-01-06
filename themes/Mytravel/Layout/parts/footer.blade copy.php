@@ -107,6 +107,7 @@
 </script>
 <script src="{{ asset('libs/lodash.min.js') }}"></script>
 <script src="{{ asset('libs/vue/vue'.(!env('APP_DEBUG') ? '.min':'').'.js') }}"></script>
+<!-- <script src="{{ asset('libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <script src="{{ asset('libs/bootbox/bootbox.min.js') }}"></script>
@@ -146,7 +147,7 @@
         </div>
 	</div>
 	<script>
-        var save_cookie_url = '<?= route('core.cookie.check') ?>';
+        var save_cookie_url = '{{route('core.cookie.check')}}';
 	</script>
 	<script src="{{ asset('js/cookie.js?_ver='.config('app.asset_version')) }}"></script>
 @endif
@@ -154,7 +155,9 @@
     @include('auth.confirm-password-modal')
     <script src="{{asset('/module/user/js/2fa.js')}}"></script>
 @endif
-
+@if(request('preview'))
+    <script src="{{ asset('themes/mytravel/module/template/preview.js?_ver='.config('app.asset_version')) }}"></script>
+@endif
 {!! \App\Helpers\Assets::js(true) !!}
 
 @stack('js')

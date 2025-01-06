@@ -232,7 +232,7 @@
         mounted(){
             var me = this;
             var options = {
-                showCalendar: false,
+                showCalendar: true,
                 sameDate: true,
                 autoApply           : true,
                 disabledPast        : true,
@@ -258,14 +258,15 @@
                 }
             };
 
-
             if (typeof  daterangepickerLocale == 'object') {
                 options.locale = _.merge(daterangepickerLocale,options.locale);
             }
+
             this.$nextTick(function () {
 
                 $(this.$refs.start_date).daterangepicker(options).on('apply.daterangepicker',
                     function (ev, picker) {
+                        console.log('daterangepicker');
                         if(me.booking_type === "by_night"){
                             if(picker.endDate.diff(picker.startDate,'day') <=0){
                                 picker.endDate.add(1,'day');
@@ -511,9 +512,7 @@
                 $(this.$refs.start_date).trigger('click');
             }
         }
-
     });
-
 
     $(window).on("load", function () {
         var urlHash = window.location.href.split("#")[1];

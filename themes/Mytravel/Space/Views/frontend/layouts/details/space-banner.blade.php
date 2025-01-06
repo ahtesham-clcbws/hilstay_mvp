@@ -4,7 +4,6 @@
         border-radius: 12px;
         overflow: hidden;
     }
-
     #imageNumbers {
         border: #ffffff solid 0.5px;
         border-radius: 10px;
@@ -15,7 +14,6 @@
         right: 25px;
         font-weight: 700;
     }
-
     #imageNumbers:hover {
         color: #ffffff;
         background-color: #103815;
