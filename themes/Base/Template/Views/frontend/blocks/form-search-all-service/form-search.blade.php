@@ -10,7 +10,7 @@
                         $module = new $allServices[$service_type];
                     @endphp
                     <li role="bravo_{{$service_type}}">
-                        <a href="#bravo_{{$service_type}}" class="@if($number == 0) active @endif" aria-controls="bravo_{{$service_type}}" role="tab" data-toggle="tab">
+                        <a href="#bravo_{{$service_type}}" class="@if($number == 0) active @endif" aria-controls="bravo_{{$service_type}}" role="tab" e="tab">
                             <i class="{{ $module->getServiceIconFeatured() }}"></i>
                             {{ !empty($modelBlock["title_for_".$service_type]) ? $modelBlock["title_for_".$service_type] : $module->getModelName() }}
                         </a>

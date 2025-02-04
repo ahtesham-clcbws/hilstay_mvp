@@ -1,7 +1,7 @@
 <div class="item">
     <div class="col dropdown-custom px-0 mb-4 form-select-guests">
         <span class="d-block text-gray-1 text-left font-weight-normal">{{ $field['title'] ?? "" }}</span>
-        <div class="flex-horizontal-center border-bottom border-width-2 border-color-1 py-2 d-flex  dropdown-toggle" data-toggle="dropdown">
+        <div class="flex-horizontal-center border-bottom border-width-2 border-color-1 py-2 d-flex  dropdown-toggle" e="dropdown">
             <i class="flaticon-add-group d-flex align-items-center mr-3 font-size-20 text-primary font-weight-semi-bold"></i>
             @php
                 $adults = request()->query('adults',1);

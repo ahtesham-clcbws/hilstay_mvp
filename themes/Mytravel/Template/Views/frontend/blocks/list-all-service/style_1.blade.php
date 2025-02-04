@@ -14,7 +14,7 @@
                         $module = new $allServices[$service_type];
                     @endphp
                     <li class="nav-item" role="bravo_{{$service_type}}">
-                        <a class="nav-link font-weight-medium @if($number == 0) active @endif" data-toggle="pill" href="#bravo_{{$key_time.$service_type}}-tab">
+                        <a class="nav-link font-weight-medium @if($number == 0) active @endif" e="pill" href="#bravo_{{$key_time.$service_type}}-tab">
                             <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
                                 <span class="tabtext font-weight-semi-bold">
                                     {{ !empty($modelBlock["title_for_".$service_type]) ? $modelBlock["title_for_".$service_type] : $module->getModelName() }}

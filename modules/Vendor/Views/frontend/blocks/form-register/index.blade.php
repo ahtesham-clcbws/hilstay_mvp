@@ -62,7 +62,7 @@
             <div class="col-12 col-lg-6">
                 <div class="bravo_gallery">
                     <div class="btn-group">
-                        <span class="btn-transparent has-icon bravo-video-popup" @if(!empty($youtube)) data-toggle="modal" @endif data-src="{{ handleVideoUrl($youtube) }}" data-target="#video-register">
+                        <span class="btn-transparent has-icon bravo-video-popup" @if(!empty($youtube)) data-bs-toggle="modal" @endif data-src="{{ handleVideoUrl($youtube) }}" data-bs-target="#video-register">
                             @if($bg_image)
                                 <img src="{{get_file_url($bg_image,'full')}}" class="img-fluid" alt="Youtube">
                             @endif

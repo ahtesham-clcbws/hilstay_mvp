@@ -153,7 +153,7 @@
                         <li>
                             <div class="label">
                                 {{$item['name_'.$lang_local] ?? $item['name']}}
-                                <i class="icofont-info-circle" data-toggle="tooltip" data-placement="top" title="{{ $item['desc_'.$lang_local] ?? $item['desc'] }}"></i>
+                                <i class="icofont-info-circle" e="tooltip" data-placement="top" title="{{ $item['desc_'.$lang_local] ?? $item['desc'] }}"></i>
                             </div>
                             <div class="val">
                                 {{ format_money( $fee_price ) }}

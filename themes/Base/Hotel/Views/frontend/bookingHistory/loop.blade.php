@@ -35,7 +35,7 @@
     <td class="{{$booking->status}} a-hidden">{{$booking->statusName}}</td>
     <td width="2%">
         @if($service = $booking->service)
-            <a class="btn btn-xs btn-primary btn-info-booking" data-ajax="{{route('booking.modal',['booking'=>$booking])}}" data-toggle="modal" data-id="{{$booking->id}}" data-target="#modal_booking_detail">
+            <a class="btn btn-xs btn-primary btn-info-booking" data-ajax="{{route('booking.modal',['booking'=>$booking])}}" data-bs-toggle="modal" data-id="{{$booking->id}}" data-bs-target="#modal_booking_detail">
                 <i class="fa fa-info-circle"></i>{{__("Details")}}
             </a>
         @endif

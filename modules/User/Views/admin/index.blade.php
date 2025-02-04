@@ -82,7 +82,7 @@
                                 {{--<td class="status">{{$row->status}}</td>--}}
                                 <td>
                                     <div class="dropdown">
-                                        <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button class="btn btn-primary btn-sm dropdown-toggle" type="button" e="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="fa fa-th"></i>
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

@@ -95,3 +95,31 @@ Listing Page
     "enquiry_type": "book",
     "booking_type": "by_day";
 }
+
+
+## Jan 14
+Homepage:
+	1024 3 cards in a row
+	listing card, on like heart filled fully
+	
+Listing:
+	All type icons will be same height & types
+	font size small
+	spacing between types
+	Bullet points will be filled & theme color
+	video will be hide from admin
+	calendar dates fonts will be same size
+	Review will be rating, & below is reviews
+	
+listing card:
+	type icons symetry
+	
+Footer:
+	list my hotel -> list my property
+	Give us feedbacks -> give us feedback
+	
+After booking:
+	Show similar events
+
+## Jan25
+vithika email

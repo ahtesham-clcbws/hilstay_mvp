@@ -8,7 +8,7 @@
                 {{ block.name }}
             </div>
             <div class="dropdown" title="Options">
-                <span data-toggle="dropdown" class="py-1 px-2">
+                <span e="dropdown" class="py-1 px-2">
                     <i class="fa fa-cog"></i>
                 </span>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

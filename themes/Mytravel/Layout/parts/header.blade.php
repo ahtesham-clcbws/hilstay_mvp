@@ -37,14 +37,14 @@
                                 @include('Language::frontend.switcher')
                                 @if(!Auth::id())
                                     <li class="login-item">
-                                        <a href="#login" data-toggle="modal" data-target="#login" class="login">{{__('Login')}}</a>
+                                        <a href="#login" data-bs-toggle="modal" data-bs-target="#login" class="login">{{__('Login')}}</a>
                                     </li>
                                     <li class="signup-item">
-                                        <a href="#register" data-toggle="modal" data-target="#register" class="signup">{{__('Sign Up')}}</a>
+                                        <a href="#register" data-bs-toggle="modal" data-bs-target="#register" class="signup">{{__('Sign Up')}}</a>
                                     </li>
                                 @else
                                     <li class="login-item dropdown">
-                                        <a href="#" data-toggle="dropdown" class="is_login">
+                                        <a href="#" data-bs-toggle="dropdown" class="is_login">
                                             @if($avatar_url = Auth::user()->getAvatarUrl())
                                                 <img class="avatar" src="{{$avatar_url}}" alt="{{ Auth::user()->getDisplayName()}}">
                                             @else
@@ -93,10 +93,10 @@
                     <ul>
                         @if(!Auth::id())
                             <li>
-                                <a href="#login" data-toggle="modal" data-target="#login" class="login">{{__('Login')}}</a>
+                                <a href="#login" data-bs-toggle="modal" data-bs-target="#login" class="login">{{__('Login')}}</a>
                             </li>
                             <li>
-                                <a href="#register" data-toggle="modal" data-target="#register" class="signup">{{__('Sign Up')}}</a>
+                                <a href="#register" data-bs-toggle="modal" data-bs-target="#register" class="signup">{{__('Sign Up')}}</a>
                             </li>
                         @else
                             <li>

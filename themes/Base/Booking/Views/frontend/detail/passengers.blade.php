@@ -7,7 +7,7 @@ if(!count($passengers)) return;
     @foreach($passengers as $i=>$passenger)
         <div class="card">
             <div class="card-header c-pointer" id="passenger_heading_{{$i + 1}}">
-                <h4 class="mb-0 " style="font-size: 16px" data-toggle="collapse" data-target="#passenger_{{$i + 1}}" aria-expanded="true"
+                <h4 class="mb-0 " style="font-size: 16px" data-bs-toggle="collapse" data-bs-target="#passenger_{{$i + 1}}" aria-expanded="true"
                     aria-controls="passenger_{{$i + 1}}">
                     {{__("Guest #:number",['number'=>$i + 1])}}: {{$passenger->first_name}} {{$passenger->last_name}}
                 </h4>

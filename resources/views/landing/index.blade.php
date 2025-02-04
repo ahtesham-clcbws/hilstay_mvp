@@ -51,7 +51,7 @@
                 <div class="col-xs-9">
                     <div class="dropdown dropdown-main-menu">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                e="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="glyphicon glyphicon-menu-hamburger"></span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

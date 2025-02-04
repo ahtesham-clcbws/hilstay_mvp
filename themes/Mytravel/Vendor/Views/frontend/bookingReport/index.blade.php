@@ -7,7 +7,7 @@
         <h2 class="title-bar no-border-bottom">
             {{__("Booking Report")}}
         </h2>
-        <button class="btn btn-info"  data-toggle="modal" data-target="#filter">{{ __('Advanced Filter') }}</button>
+        <button class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#filter">{{ __('Advanced Filter') }}</button>
     </div>
     @include('admin.message')
     <div class="booking-history-manager">

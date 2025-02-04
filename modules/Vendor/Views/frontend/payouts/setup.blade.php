@@ -10,7 +10,7 @@ $payout_accounts = $currentUser->payout_accounts;
 @endphp
 <h4>{{__('Setup your payment accounts')}}</h4>
 <div class="">
-    <a href="#vendor_payout_accounts" data-toggle="modal" class="btn btn-primary btn-sm">{{__("Setup accounts")}}</a>
+    <a href="#vendor_payout_accounts" al" class="btn btn-primary btn-sm">{{__("Setup accounts")}}</a>
 </div>
 <br>
 <p><i>{{__("To create payout request, please setup your payment account first")}}</i></p>

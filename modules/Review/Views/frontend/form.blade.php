@@ -87,7 +87,7 @@
                             @foreach($listImages as $oneImages)
                                 @php $imagesData = json_decode($oneImages, true); @endphp
                                 <div class="col-md-2 mb-2">
-                                    <div class="review_upload_item" data-toggle="modal" data-target="#modal_room_{{$item->id}}" style="background-image: url({{@$imagesData['download']}});">
+                                    <div class="review_upload_item" data-bs-toggle="modal" data-bs-target="#modal_room_{{$item->id}}" style="background-image: url({{@$imagesData['download']}});">
                                     </div>
                                 </div>
                             @endforeach

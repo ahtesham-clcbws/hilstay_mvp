@@ -1,0 +1,23 @@
+Space before Event
+Trending => Our Homes
+Listing card details -> property size remove, (Bedroom, Beds, People, Bathroom)
+Listing -> add No of Bedrooms in Extra Info
+Change icons for all extra info
+remove google plus, add instagram
+add social media
+
+DEC-5
+Listing Page
+	slider collage with lightbox
+	Listing name would need to be like heading
+	remove view on map
+	icons will be small -60%
+	Title, location, icons would be like sundaysforever.com listing view
+	get anemities from sundaysforever.com
+	every bullet points in primary color
+	after title star logo with review, and scroll to reviews when clicked
+	add calendar onto spacetype
+	twitter remove
+	linkedin link from zain & needs to be placed
+	remove map for now (just hide it)
+	footer contact info from zain to change

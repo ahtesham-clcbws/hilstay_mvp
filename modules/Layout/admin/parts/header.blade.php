@@ -28,7 +28,7 @@ $theme = \Modules\Theme\ThemeManager::currentProvider();
     <div class="widgets-right flex-shrink-0 d-flex">
         @if(!empty($languages) and is_enable_multi_lang())
         <div class="dropdown header-widget widget-user widget-language flex-shrink-0">
-            <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+            <div data-bs-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
                 @foreach($languages as $language)
                     @if($locale == $language->locale)
                         <div class="user-info flex-grow-1 d-flex">
@@ -56,7 +56,7 @@ $theme = \Modules\Theme\ThemeManager::currentProvider();
         </div>
         @endif
         <div class="dropdown header-widget widget-user pt-2 dropdown-notifications flex-shrink-0" style="min-width: 0">
-            <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+            <div data-bs-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-lg fa-bell m-1 p-1"></i>
                 <span class="badge badge-danger notification-icon">{{$countUnread}}</span>
             </div>
@@ -121,7 +121,7 @@ $theme = \Modules\Theme\ThemeManager::currentProvider();
             </div>
         </div>
         <div class="dropdown header-widget widget-user flex-shrink-0">
-            <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+            <div data-bs-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
                 <span class="user-avatar flex-shrink-0">
                      @if($avatar_url = $user->getAvatarUrl())
                         <div class="avatar avatar-cover" style="background-image: url('{{$user->getAvatarUrl()}}')"></div>

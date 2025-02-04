@@ -9,7 +9,7 @@ $desc = $meta_seo['seo_desc'] ?? $meta_seo['service_desc'] ?? '';
 ?>
 <div class="panel">
     <div class="panel-title d-flex justify-content-between align-items-center py-2"><strong>{{__("Search engine")}}</strong>
-        <a href="#" data-toggle="modal" data-target="#seo_config" class="btn btn-sm btn-link">{{__("Edit")}}</a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#seo_config" class="btn btn-sm btn-link">{{__("Edit")}}</a>
     </div>
     <div class="panel-body">
         <div class="seo-preview max-w-650">
@@ -72,13 +72,13 @@ $desc = $meta_seo['seo_desc'] ?? $meta_seo['service_desc'] ?? '';
                 </div>
                 <ul class="nav nav-tabs mb-2" data-condition="seo_index:is(1)">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#seo_1">{{__("General Options")}}</a>
+                        <a class="nav-link active" data-bs-toggle="tab" href="#seo_1">{{__("General Options")}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#seo_2">{{__("Share Facebook")}}</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#seo_2">{{__("Share Facebook")}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#seo_3">{{__("Share Twitter")}}</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#seo_3">{{__("Share Twitter")}}</a>
                     </li>
                 </ul>
                 <div class="tab-content" data-condition="seo_index:is(1)">

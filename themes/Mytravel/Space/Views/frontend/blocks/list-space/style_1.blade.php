@@ -10,7 +10,8 @@
         @endif
         <div class="row">
             @foreach($rows as $row)
-                <div class="col-md-6 col-lg-{{$col ?? 3}} col-xl-{{$col ?? 3}} mb-3 mb-md-4 pb-1">
+            {{-- <div class="col-md-6 col-lg-{{$col ?? 3}} col-xl-{{$col ?? 3}} mb-3 mb-md-4 pb-1">--}}
+            <div class="col-md-6 col-lg-4 col-xl-3 mb-3 mb-md-4 pb-1">
                     @include('Space::frontend.layouts.search.loop-grid')
                 </div>
             @endforeach

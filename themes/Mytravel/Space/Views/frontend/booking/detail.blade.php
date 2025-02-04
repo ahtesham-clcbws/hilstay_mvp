@@ -20,7 +20,7 @@
         <div class="card rounded-0 border-top-0 border-left-0 border-right-0">
             <div class="card-header card-collapse bg-transparent border-0">
                 <h5 class="mb-0">
-                    <button type="button" class="btn btn-link border-0 btn-block d-flex justify-content-between card-btn py-3 px-4 font-size-17 font-weight-bold text-dark" data-toggle="collapse" data-target="#basicsCollapseDetail">
+                    <button type="button" class="btn btn-link border-0 btn-block d-flex justify-content-between card-btn py-3 px-4 font-size-17 font-weight-bold text-dark" data-bs-toggle="collapse" data-bs-target="#basicsCollapseDetail">
                         {{ __("Booking Detail") }}
                         <span class="card-btn-arrow font-size-14 text-dark"><i class="fa fa-chevron-down"></i></span>
                     </button>
@@ -78,7 +78,7 @@
                         <li class="flex-wrap">
                             <div class="flex-grow-0 flex-shrink-0 w-100">
                                 <p class="text-center">
-                                    <a data-toggle="modal" data-target="#detailBookingDate{{$booking->code}}" aria-expanded="false"
+                                    <a datadata-bs-target="odal" data-bs-target="#detailBookingDate{{$booking->code}}" aria-expanded="false"
                                        aria-controls="detailBookingDate{{$booking->code}}">
                                         {{__('Detail')}} <i class="icofont-list"></i>
                                     </a>
@@ -92,7 +92,7 @@
         <div class="card rounded-0 border-top-0 border-left-0 border-right-0">
             <div class="card-header card-collapse bg-transparent border-0" id="basicsHeadingFour">
                 <h5 class="mb-0">
-                    <button type="button" class="btn btn-link border-0 btn-block d-flex justify-content-between card-btn py-3 px-4 font-size-17 font-weight-bold text-dark" data-toggle="collapse" data-target="#basicsCollapsePayment">
+                    <button type="button" class="btn btn-link border-0 btn-block d-flex justify-content-between card-btn py-3 px-4 font-size-17 font-weight-bold text-dark" data-bs-toggle="collapse" data-bs-target="#basicsCollapsePayment">
                         {{ __("Payment") }}
                         <span class="card-btn-arrow font-size-14 text-dark"><i class="fa fa-chevron-down"></i></span>
                     </button>
@@ -155,7 +155,7 @@
                                 <li class="d-flex justify-content-between py-2">
                                     <div class="label">
                                         {{$item['name_'.$lang_local] ?? $item['name']}}
-                                        <i class="icofont-info-circle" data-toggle="tooltip" data-placement="top" title="{{ $item['desc_'.$lang_local] ?? $item['desc'] }}"></i>
+                                        <i class="icofont-info-circle" data-bs-toggle="tooltip" data-placement="top" title="{{ $item['desc_'.$lang_local] ?? $item['desc'] }}"></i>
                                         @if(!empty($item['per_person']) and $item['per_person'] == "on")
                                             : {{$booking->total_guests}} * {{format_money( $fee_price )}}
                                         @endif

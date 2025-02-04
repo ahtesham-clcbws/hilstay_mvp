@@ -22,7 +22,7 @@
                     <div class="enquiry-item active" >
                         <span>{{ __("Book") }}</span>
                     </div>
-                    <div class="enquiry-item" data-toggle="modal" data-target="#enquiry_form_modal">
+                    <div class="enquiry-item" data-bs-toggle="modal" data-bs-target="#enquiry_form_modal">
                         <span>{{ __("Enquiry") }}</span>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                             <div class="extra-price-wrap d-flex justify-content-between" v-for="(type,index) in buyer_fees">
                                 <div class="flex-grow-1">
                                     <label>@{{type.type_name}}
-                                        <i class="icofont-info-circle" v-if="type.desc" data-toggle="tooltip" data-placement="top" :title="type.type_desc"></i>
+                                        <i class="icofont-info-circle" v-if="type.desc" data-bs-toggle="tooltip" data-placement="top" :title="type.type_desc"></i>
                                     </label>
                                     <div class="render" v-if="type.price_type">(@{{type.price_type}})</div>
                                 </div>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 <div class="form-send-enquiry" v-show="enquiry_type=='enquiry'">
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#enquiry_form_modal">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enquiry_form_modal">
                         {{ __("Contact Now") }}
                     </button>
                 </div>

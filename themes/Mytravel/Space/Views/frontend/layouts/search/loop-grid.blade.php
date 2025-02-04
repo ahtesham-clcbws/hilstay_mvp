@@ -7,8 +7,8 @@
             <img class="card-img-top" src="{{$row->image_url}}" alt="{!! clean($translation->title) !!}">
         </a>
         <div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
-            <button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist {{$row->isWishList()}}" data-id="{{$row->id}}" data-type="{{$row->type}}" data-toggle="tooltip" data-placement="top" title="" data-original-title="{{ __("Save for later") }}">
-                <span class="flaticon-valentine-heart font-size-20"></span>
+            <button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist {{$row->isWishList()}}" data-id="{{$row->id}}" data-type="{{$row->type}}" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="{{ __("Save for later") }}">
+            <span class="font-size-20">{!! $row->isWishList() == 'active' ? '<i class="fa fa-heart"></i>' : '<i class="fa fa-heart-o"></i>' !!}</span>
             </button>
         </div>
         <div class="position-absolute bottom-0 left-0 right-0 text-content">
@@ -99,7 +99,7 @@
             <div class="col-6">
                 <ul class="list-unstyled mb-0">
                     <li class="media mb-2 text-gray-1 align-items-center">
-                        <small class="mr-2" style="margin-top: -3px">
+                        <small class="mr-2" style="margin-top: -6px">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="19"><path d="M29.5 6h-2.793L24.85 4.143a1.5 1.5 0 1 0-2.7 0L20.293 6H17.5a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5zm-6-3a.5.5 0 1 1-.5.5.5.5 0 0 1 .5-.5zm-.643 1.85a1.453 1.453 0 0 0 1.286 0L25.293 6h-3.586zM29 7v3.293l-1.146-1.147a.5.5 0 0 0-.708 0L24.5 11.793l-2.646-2.647a.5.5 0 0 0-.708 0L18 12.293V7zm-11 6.707 3.5-3.5L25.293 14H18zm8.707.293-1.5-1.5 2.293-2.293 1.5 1.5V14z"/><circle cx="24.5" cy="8.5" r=".5"/><path d="M29.5 29H28v-7.5a4.505 4.505 0 0 0-4.5-4.5H10v-2.5A2.5 2.5 0 0 0 7.5 12H7V9.5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5V29H2.5a.5.5 0 0 0 0 1h27a.5.5 0 0 0 0-1zM27 21.5V25H7v-7h16.5a3.5 3.5 0 0 1 3.5 3.5zM7 26h18v3H7zm.5-13A1.5 1.5 0 0 1 9 14.5V17H7v-4zM5 29V10h1v19zm21 0v-3h1v3z"/></svg>
                         </small>
                         <div class="media-body font-size-1">
@@ -119,7 +119,7 @@
             <div class="col-6">
                 <ul class="list-unstyled mb-0">
                     <li class="media mb-2 text-gray-1 align-items-center">
-                        <small class="mr-2" style="margin-top: -3px">
+                        <small class="mr-2" style="margin-top: -6px">
 
                             <svg width="16" height="19" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     viewBox="0 0 489.6 489.6" xml:space="preserve">

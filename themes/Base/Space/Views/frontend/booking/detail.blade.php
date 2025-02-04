@@ -85,7 +85,7 @@
                     <li class="flex-wrap">
                         <div class="flex-grow-0 flex-shrink-0 w-100">
                             <p class="text-center">
-                                <a data-toggle="modal" data-target="#detailBookingDate{{$booking->code}}" aria-expanded="false"
+                                <a data-bs-toggle="modal" data-bs-target="#detailBookingDate{{$booking->code}}" aria-expanded="false"
                                    aria-controls="detailBookingDate{{$booking->code}}">
                                     {{__('Detail')}} <i class="icofont-list"></i>
                                 </a>
@@ -148,7 +148,7 @@
                         <li>
                             <div class="label">
                                 {{$item['name_'.$lang_local] ?? $item['name']}}
-                                <i class="icofont-info-circle" data-toggle="tooltip" data-placement="top" title="{{ $item['desc_'.$lang_local] ?? $item['desc'] }}"></i>
+                                <i class="icofont-info-circle" data-bs-toggle="tooltip" data-placement="top" title="{{ $item['desc_'.$lang_local] ?? $item['desc'] }}"></i>
                                 @if(!empty($item['per_person']) and $item['per_person'] == "on")
                                     : {{$booking->total_guests}} * {{format_money( $fee_price )}}
                                 @endif

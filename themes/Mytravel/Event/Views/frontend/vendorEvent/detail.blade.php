@@ -12,11 +12,11 @@
             @csrf
             <div class="form-add-service">
                 <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                    <a data-toggle="tab" href="#nav-tour-content" aria-selected="true" class="active">{{__("1. Content")}}</a>
-                    <a data-toggle="tab" href="#nav-tour-location" aria-selected="false">{{__("2. Locations")}}</a>
-                    <a data-toggle="tab" href="#nav-tour-pricing" aria-selected="false">{{__("3. Pricing")}}</a>
+                    <a data-bs-toggle="tab" href="#nav-tour-content" aria-selected="true" class="active">{{__("1. Content")}}</a>
+                    <a data-bs-toggle="tab" href="#nav-tour-location" aria-selected="false">{{__("2. Locations")}}</a>
+                    <a data-bs-toggle="tab" href="#nav-tour-pricing" aria-selected="false">{{__("3. Pricing")}}</a>
                     @if(is_default_lang())
-                        <a data-toggle="tab" href="#nav-attribute" aria-selected="false">{{__("4. Attributes")}}</a>
+                        <a data-bs-toggle="tab" href="#nav-attribute" aria-selected="false">{{__("4. Attributes")}}</a>
                     @endif
                 </div>
                 <div class="tab-content" id="nav-tabContent">

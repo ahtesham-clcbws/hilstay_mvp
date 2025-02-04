@@ -63,6 +63,6 @@
         </div>
     @endif
     @if(is_enable_registration())
-        <div class="c-grey font-medium f14 text-center"> {{__('Do not have an account?')}} <a href="" data-target="#register" data-toggle="modal">{{__('Sign Up')}}</a></div>
+        <div class="c-grey font-medium f14 text-center"> {{__('Do not have an account?')}} <a href="" data-bs-target="#register" data-bs-toggle="modal">{{__('Sign Up')}}</a></div>
     @endif
 </form>

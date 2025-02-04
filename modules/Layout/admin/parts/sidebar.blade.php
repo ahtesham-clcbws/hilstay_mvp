@@ -8,7 +8,7 @@ $groups = \Modules\Core\Helpers\AdminMenuManager::groups_with_children();
             <li class="group mt-3 pos-{{$group['position'] ?? 0}}">
                 <span class="group-name  d-flex align-items-center justify-content-between ">{{$group['name']}}
                     @if($require_pro and !isPro())
-                        <a href="#" data-toggle="modal" data-target="#upgrade-pro" class="">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#upgrade-pro" class="">
                             <img width="22px" class="mr-3" src="{{asset('/images/premium.png')}}" alt="Upgrade">
                         </a>
                     @endif

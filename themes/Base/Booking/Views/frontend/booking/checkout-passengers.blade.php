@@ -8,7 +8,7 @@
                 <?php $old_item = $old_data[$i] ?? []; ?>
                 <div class="card">
                     <div class="card-header c-pointer" id="passenger_heading_{{$i}}">
-                        <h4 class="mb-0 " data-toggle="collapse" data-target="#passenger_{{$i}}" aria-expanded="true"
+                        <h4 class="mb-0 " data-bs-toggle="collapse" data-bs-target="#passenger_{{$i}}" aria-expanded="true"
                             aria-controls="passenger_{{$i}}">
                             {{__("Guest #:number",['number'=>$i])}}:
                         </h4>

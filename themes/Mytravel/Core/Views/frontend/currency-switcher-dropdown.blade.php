@@ -7,7 +7,7 @@
     <li class="dropdown">
         @foreach($actives as $currency)
             @if($current == $currency['currency_main'])
-                <a href="#" data-toggle="dropdown" class="is_login">
+                <a href="#" e="dropdown" class="is_login">
                     {{strtoupper($currency['currency_main'])}}
                     <i class="fa fa-angle-down"></i>
                 </a>

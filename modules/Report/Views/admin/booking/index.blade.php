@@ -116,11 +116,11 @@
                                 <td>
                                     @if($service = $row->service)
                                         <div class="dropdown">
-                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{__('Actions')}}
+                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{__('Actions')}}
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item btn-detail-booking" href="#modal_booking_detail" data-ajax="{{route('booking.modal',['booking'=>$booking])}}" data-toggle="modal" data-id="{{$booking->id}}" data-target="#modal_booking_detail">{{__('Detail')}}</a>
-                                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-paid-{{$row->id}}">{{__('Set Paid')}}</a>
+                                                <a class="dropdown-item btn-detail-booking" href="#modal_booking_detail" data-ajax="{{route('booking.modal',['booking'=>$booking])}}" data-bs-toggle="modal" data-id="{{$booking->id}}" data-bs-target="#modal_booking_detail">{{__('Detail')}}</a>
+                                                <a class="dropdown-item" href="#" datadata-bs-target="odal" data-bs-target="#modal-paid-{{$row->id}}">{{__('Set Paid')}}</a>
                                                 <a class="dropdown-item" href="{{route('report.admin.booking.email_preview',['id'=>$row->id])}}">{{__('Email Preview')}}</a>
                                             </div>
                                         </div>

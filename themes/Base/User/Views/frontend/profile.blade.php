@@ -131,7 +131,7 @@
             <div class="mb-4 mt-2">
                 {!! clean(setting_item_with_lang('user_permanently_delete_content','',__('Your account will be permanently deleted. Once you delete your account, there is no going back. Please be certain.'))) !!}
             </div>
-            <a data-toggle="modal" data-target="#permanentlyDeleteAccount" class="btn btn-danger" href="">{{__('Delete your account')}}</a>
+            <a data-bs-toggle="modal" data-bs-target="#permanentlyDeleteAccount" class="btn btn-danger" href="">{{__('Delete your account')}}</a>
         </div>
 
         <!-- Modal -->

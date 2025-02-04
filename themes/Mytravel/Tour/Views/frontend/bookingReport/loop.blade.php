@@ -30,7 +30,7 @@
     <td class="{{$booking->status}} a-hidden">{{$booking->statusName}}</td>
     <td width="2%">
         @if($service = $booking->service)
-            <a class="btn btn-xs btn-primary btn-info-booking" data-toggle="modal" data-target="#modal-booking-{{$booking->id}}">
+            <a class="btn btn-xs btn-primary btn-info-booking" data-bs-toggle="modal" data-bs-target="#modal-booking-{{$booking->id}}">
                 <i class="fa fa-info-circle"></i>{{__("Details")}}
             </a>
             @include ($service->checkout_booking_detail_modal_file ?? '')
@@ -39,7 +39,7 @@
             <i class="fa fa-print"></i>{{__("Invoice")}}
         </a>
         @if(!empty(setting_item("tour_allow_vendor_can_change_their_booking_status")))
-            <a class="btn btn-xs btn-info btn-make-as" data-toggle="dropdown">
+            <a class="btn btn-xs btn-info btn-make-as" data-bs-toggle="dropdown">
                 <i class="icofont-ui-settings"></i>
                 {{__("Action")}}
             </a>
@@ -54,7 +54,7 @@
             </div>
         @endif
         @if(!empty(setting_item("tour_allow_vendor_can_change_paid_amount")))
-            <a class="btn btn-xs btn-info btn-info-booking mt-1" data-toggle="modal" data-target="#modal-paid-{{$booking->id}}">
+            <a class="btn btn-xs btn-info btn-info-booking mt-1" datadata-bs-target="odal" data-bs-target="#modal-paid-{{$booking->id}}">
                 <i class="fa fa-dollar"></i>{{__("Set Paid")}}
             </a>
             @include ($service->set_paid_modal_file ?? '')

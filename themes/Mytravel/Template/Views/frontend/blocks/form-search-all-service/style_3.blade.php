@@ -21,7 +21,7 @@
 
                             @if($service_type == 'space')
                             <li class="nav-item" role="bravo_{{$service_type}}">
-                                <a class="nav-link font-weight-medium active pl-md-5 pl-3" id="bravo_{{$service_type}}-custom-tab" data-toggle="pill" href="#bravo_{{$service_type}}" role="tab" aria-controls="bravo_{{$service_type}}" aria-selected="true">
+                                <a class="nav-link font-weight-medium active pl-md-5 pl-3" id="bravo_{{$service_type}}-custom-tab" data-bs-toggle="pill" href="#bravo_{{$service_type}}" role="tab" aria-controls="bravo_{{$service_type}}" aria-selected="true">
                                     <div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
                                         <figure class="ie-height-40 d-md-block mr-md-3">
                                             <i class="icon {{ $module->getServiceIconFeatured() }} font-size-3"></i>
@@ -45,7 +45,7 @@
 
                             @if($service_type == 'event')
                             <li class="nav-item" role="bravo_{{$service_type}}">
-                                <a class="nav-link font-weight-medium pl-md-5 pl-3" id="bravo_{{$service_type}}-custom-tab" data-toggle="pill" href="#bravo_{{$service_type}}" role="tab" aria-controls="bravo_{{$service_type}}" aria-selected="true">
+                                <a class="nav-link font-weight-medium pl-md-5 pl-3" id="bravo_{{$service_type}}-custom-tab" data-bs-toggle="pill" href="#bravo_{{$service_type}}" role="tab" aria-controls="bravo_{{$service_type}}" aria-selected="true">
                                     <div class="d-flex flex-column flex-md-row  position-relative text-white align-items-center">
                                         <figure class="ie-height-40 d-md-block mr-md-3">
                                             <i class="icon {{ $module->getServiceIconFeatured() }} font-size-3"></i>

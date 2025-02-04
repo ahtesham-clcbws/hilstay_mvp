@@ -26,5 +26,6 @@ yarn-error.log
 storage/bc.php
 storage/pro.php
 storage/installed
+vendor/_laravel_ide/*
 
 *.zip

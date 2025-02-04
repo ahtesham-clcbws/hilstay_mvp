@@ -2,7 +2,7 @@
     <div class="bravo-reviews">
         <div class="border-bottom py-4">
             <h5 id="scroll-reviews" class="font-size-21 font-weight-bold text-dark mb-4">
-                {{__("Reviews")}}
+                {{__("Ratings")}}
             </h5>
             @if($review_score)
                 <div class="row">
@@ -49,6 +49,7 @@
         </div>
         <div id="stickyBlockEndPoint"></div>
         <div class="border-bottom py-4">
+            <!-- <h5 id="scroll-reviews" class="font-size-21 font-weight-bold text-dark mb-4">Reviews</h5> -->
             @if($review_list->total() > 0)
                 <h5 class="font-size-21 font-weight-bold text-dark mb-5 mt-3">
                     {{ __("Showing :from - :to of :total total",["from"=>$review_list->firstItem(),"to"=>$review_list->lastItem(),"total"=>$review_list->total()]) }}

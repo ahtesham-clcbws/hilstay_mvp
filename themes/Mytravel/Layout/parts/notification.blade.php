@@ -4,7 +4,7 @@ if(!auth()->check()) return;
 
 ?>
 <div class="dropdown-notifications position-relative px-3 u-header__login-form dropdown-connector-xl u-header__topbar-divider">
-                <span class="d-inline-block font-size-14 mr-1 dropdown-nav-link" data-toggle="dropdown">
+                <span class="d-inline-block font-size-14 mr-1 dropdown-nav-link" data-bs-toggle="dropdown">
                     <i class="flaticon-bell mr-2 ml-1 font-size-18"></i>
                     <span class="d-inline-block badge badge-danger notification-icon">{{$countUnread}}</span>
                 </span>

@@ -41,12 +41,26 @@
         </li>
     </ul>
 </div>
+<style>
+    .type-list {
+        display: flex !important;
+        gap: 25px;
+    }
+    .type-list li {
+    }
+    .type-list li > div {
+        font-size: 14px !important;
+    }
+    .type-list svg.icon {
+        margin-top: 3px;
+    }
+</style>
 
 <div class="border-bottom mb-4 pb-1 d-md-flex justify-content-between align-items-end">
-    <ul class="list-group list-group-borderless list-group-horizontal d-flex">
+    <ul class="list-group list-group-borderless list-group-horizontal d-flex type-list">
         @if($row->bedroom)
-        <li class="d-flex mr-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" viewBox="0 0 32 32" width="16" height="16">
+        <li class="d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" class="text-primary icon" viewBox="0 0 32 32" width="14" height="14">
                 <path d="M29.5 6h-2.793L24.85 4.143a1.5 1.5 0 1 0-2.7 0L20.293 6H17.5a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5zm-6-3a.5.5 0 1 1-.5.5.5.5 0 0 1 .5-.5zm-.643 1.85a1.453 1.453 0 0 0 1.286 0L25.293 6h-3.586zM29 7v3.293l-1.146-1.147a.5.5 0 0 0-.708 0L24.5 11.793l-2.646-2.647a.5.5 0 0 0-.708 0L18 12.293V7zm-11 6.707 3.5-3.5L25.293 14H18zm8.707.293-1.5-1.5 2.293-2.293 1.5 1.5V14z" />
                 <circle cx="24.5" cy="8.5" r=".5" />
                 <path d="M29.5 29H28v-7.5a4.505 4.505 0 0 0-4.5-4.5H10v-2.5A2.5 2.5 0 0 0 7.5 12H7V9.5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5V29H2.5a.5.5 0 0 0 0 1h27a.5.5 0 0 0 0-1zM27 21.5V25H7v-7h16.5a3.5 3.5 0 0 1 3.5 3.5zM7 26h18v3H7zm.5-13A1.5 1.5 0 0 1 9 14.5V17H7v-4zM5 29V10h1v19zm21 0v-3h1v3z" />
@@ -54,8 +68,8 @@
             <div class="text-gray-1 ml-1"> {{$row->bedroom}} {{ __("Bedroom") }}</div>
         </li>
         @endif
-        <li class="d-flex mr-2">
-            <svg width="16" height="16" class="text-primary" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        <li class="d-flex">
+            <svg width="14" height="14" class="text-primary icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 489.6 489.6" xml:space="preserve">
                 <g>
                     <g>
@@ -109,14 +123,14 @@
             <div class="text-gray-1 ml-1"> {{$row->max_guests}} {{ __("Guests") }}</div>
         </li>
         @if($row->bathroom)
-        <li class="d-flex mr-2">
-            <i class="flaticon-bathtub text-primary"></i>
+        <li class="d-flex">
+            <i class="flaticon-bathtub text-primary icon"></i>
             <div class="text-gray-1 ml-1"> {{$row->bathroom}} {{ __("Bathroom") }}</div>
         </li>
         @endif
         @if(!empty($row->bed))
         <li class="d-flex">
-            <i class="flaticon-bed-1 text-primary"></i>
+            <i class="flaticon-bed-1 text-primary icon"></i>
             <div class="text-gray-1 ml-1">{{$row->bed}} {{ __("Beds") }}</div>
         </li>
         @endif
@@ -146,4 +160,4 @@
 @include('Space::frontend.layouts.details.space-attributes')
 @include('Space::frontend.layouts.details.space-faqs')
 
-@include('Space::frontend.layouts.details.space-video')
+{{-- @include('Space::frontend.layouts.details.space-video') --}}

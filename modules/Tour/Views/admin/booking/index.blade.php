@@ -94,7 +94,7 @@
                                                                     $services[] = $service;
                                                                 }
                                                                 @endphp
-                                                                <div title="#{{$booking->id}} - {{$booking->email}}" data-from="{{date('d',strtotime($booking->start_date))}}" data-to="{{date('d',strtotime($booking->end_date))}}" class="vec-event-item d-none status-{{$booking->status}}" data-toggle="modal" data-target="#modal-booking-{{$booking->id}}">
+                                                                <div title="#{{$booking->id}} - {{$booking->email}}" data-from="{{date('d',strtotime($booking->start_date))}}" data-to="{{date('d',strtotime($booking->end_date))}}" class="vec-event-item d-none status-{{$booking->status}}" data-bs-toggle="modal" data-bs-target="#modal-booking-{{$booking->id}}">
                                                                     #{{$booking->id}} - {{$booking->email}}
                                                                 </div>
                                                             @endforeach

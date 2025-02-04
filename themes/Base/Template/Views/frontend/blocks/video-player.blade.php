@@ -1,7 +1,7 @@
 <div class="container">
     <div class="bravo_gallery">
         <div class="btn-group">
-            <span class="btn-transparent has-icon bravo-video-popup" @if($youtube) data-toggle="modal" @endif data-src="{{ str_ireplace("watch?v=","embed/",$youtube) }}" data-target="#video-{{$id}}">
+            <span class="btn-transparent has-icon bravo-video-popup" @if($youtube) data-bs-toggle="modal" @endif data-src="{{ str_ireplace("watch?v=","embed/",$youtube) }}" data-bs-target="#video-{{$id}}">
                 @if($bg_image)
                     <img src="{{get_file_url($bg_image,'full')}}" class="img-fluid" alt="Youtube">
                 @endif

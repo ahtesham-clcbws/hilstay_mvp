@@ -13,7 +13,7 @@
             @endif
         </a>
         <div class="service-wishlist {{$row->isWishList()}}" data-id="{{$row->id}}" data-type="{{$row->type}}">
-            <i class="fa fa-heart-o"></i>
+            {!! $row->isWishList() == 'active' ? '<i class="fa fa-heart"></i>' : '<i class="fa fa-heart-o"></i>' !!}
         </div>
         @if($row->discount_percent)
             <div class="sale_info">{{$row->discount_percent}}</div>

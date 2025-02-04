@@ -43,7 +43,7 @@
     <td class="{{$booking->status}} a-hidden">{{$booking->statusName}}</td>
     <td width="2%">
         @if($service = $booking->service)
-            <a class="btn btn-xs btn-primary btn-info-booking" data-toggle="modal" data-target="#modal-booking-{{$booking->id}}">
+            <a class="btn btn-xs btn-primary btn-info-booking" data-bs-toggle="modal" data-bs-target="#modal-booking-{{$booking->id}}">
                 <i class="fa fa-info-circle"></i>{{__("Details")}}
             </a>
             @include ($service->checkout_booking_detail_modal_file ?? '')

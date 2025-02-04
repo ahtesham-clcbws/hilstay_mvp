@@ -24,7 +24,7 @@
                 @case ('advance')
                     <div class="filter-item filter-simple advance-filters">
                         <div class="form-group">
-                            <span class="filter-title toggle-advance-filter" data-target="#advance_filters">{{__('More filters')}} <i class="fa fa-angle-down"></i></span>
+                            <span class="filter-title toggle-advance-filter" data-bs-target="#advance_filters">{{__('More filters')}} <i class="fa fa-angle-down"></i></span>
                         </div>
                     </div>
                 @break

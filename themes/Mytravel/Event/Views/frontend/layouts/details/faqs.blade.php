@@ -8,7 +8,7 @@
         <div class="card border-0 mb-4 pb-1">
             <div class="card-header border-bottom-0 p-0" >
                 <h5 class="mb-0">
-                    <button type="button" class="collapse-link btn btn-link btn-block d-flex align-items-md-center p-0" data-toggle="collapse" data-target="#FAQs_{{$key}}" @if($key == 0 ) aria-expanded="true" @else aria-expanded="false" @endif aria-controls="FAQs_{{$key}}">
+                    <button type="button" class="collapse-link btn btn-link btn-block d-flex align-items-md-center p-0" data-bs-toggle="collapse" data-bs-target="#FAQs_{{$key}}" @if($key == 0 ) aria-expanded="true" @else aria-expanded="false" @endif aria-controls="FAQs_{{$key}}">
                         <div class="border border-color-8 rounded-xs border-width-2 p-2 mb-3 mb-md-0 mr-4">
                             <figure id="rectangle" class="minus">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="2px" class="injected-svg js-svg-injector mb-0" data-parent="#rectangle">

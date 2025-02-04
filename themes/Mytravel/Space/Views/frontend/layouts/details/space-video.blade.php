@@ -13,7 +13,7 @@
                data-video-id="{{ handleVideoUrl($row->video,true) }}"
                data-parent="youTubeVideoPlayer"
                data-is-autoplay="true"
-               data-target="youTubeVideoIframe"
+               data-bs-target="youTubeVideoIframe"
                data-classes="u-video-player__played">
                 <span class="u-video-player__icon u-video-player__icon--lg text-primary bg-transparent">
                     <span class="flaticon-multimedia text-white ml-0 font-size-60 u-video-player__icon-inner"></span>

@@ -13,17 +13,17 @@
                     @include('Language::frontend.switcher')
                 @if(!Auth::check())
                         <li class="login-item">
-                            <a href="#login" data-toggle="modal" data-target="#login" class="login">{{__('Login')}}</a>
+                            <a href="#login" data-bs-toggle="modal" data-bs-target="#login" class="login">{{__('Login')}}</a>
                         </li>
                         @if(is_enable_registration())
                             <li class="signup-item">
-                                <a href="#register" data-toggle="modal" data-target="#register" class="signup">{{__('Sign Up')}}</a>
+                                <a href="#register" datadata-bs-target="odal" data-bs-target="#register" class="signup">{{__('Sign Up')}}</a>
                             </li>
                         @endif
                     @else
                         @include('Layout::parts.notification')
                         <li class="login-item dropdown">
-                            <a href="#" data-toggle="dropdown" class="login">{{__("Hi, :name",['name'=>Auth::user()->getDisplayName()])}}
+                            <a href="#" data-bs-toggle="dropdown" class="login">{{__("Hi, :name",['name'=>Auth::user()->getDisplayName()])}}
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-user text-left">

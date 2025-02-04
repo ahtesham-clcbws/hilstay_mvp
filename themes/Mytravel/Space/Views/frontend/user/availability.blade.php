@@ -30,7 +30,7 @@
                     <ul class="nav nav-tabs  flex-column vertical-nav" id="items_tab"  role="tablist">
                         @foreach($rows as $k=>$item)
                             <li class="nav-item event-name ">
-                                <a class="nav-link" data-id="{{$item->id}}" data-toggle="tab" href="#calendar-{{$item->id}}" title="{{$item->title}}" >#{{$item->id}} - {{$item->title}}</a>
+                                <a class="nav-link" data-id="{{$item->id}}" e="tab" href="#calendar-{{$item->id}}" title="{{$item->title}}" >#{{$item->id}} - {{$item->title}}</a>
                             </li>
                         @endforeach
                     </ul>

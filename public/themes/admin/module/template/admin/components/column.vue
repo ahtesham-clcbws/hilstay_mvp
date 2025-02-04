@@ -10,7 +10,7 @@
                 </span>
                 <div class="title-right">
                     <span class="btn btn-light block-edit dropdown">
-                        <a href="#" data-toggle="dropdown" ><i class="icon ion-ios-hammer"></i></a>
+                        <a href="#" e="dropdown" ><i class="icon ion-ios-hammer"></i></a>
                         <span class="dropdown-menu">
                             <span class="dropdown-item " @click="openEdit">Edit</span>
                             <span class="dropdown-item ">Delete</span>

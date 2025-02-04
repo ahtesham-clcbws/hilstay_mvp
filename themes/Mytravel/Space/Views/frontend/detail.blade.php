@@ -137,7 +137,7 @@
                                                 {{ $availability && $availability['active'] ? 'available' : 'unavailable' }}
                                                 {{ $availability && !$availability['active'] ? implode(' ', $availability['classNames'] ?? []) : '' }}
                                                 ">
-                                                <span class="calendarDate" style="<?= $availability && $availability['active'] == 0 ? 'font-size:200%;' : '' ?>">
+                                                <span class="calendarDate">
                                                     {{ $date->day }}
                                                 </span>
                                                 @if ($availability)
@@ -186,7 +186,7 @@
                                             {{ $availability && $availability['active'] ? 'available' : 'unavailable' }}
                                             {{ $availability && !$availability['active'] ? implode(' ', $availability['classNames'] ?? []) : '' }}
                                             ">
-                                                <span class="calendarDate" style="<?= $availability && $availability['active'] == 0 ? 'font-size:200%;' : '' ?>">
+                                                <span class="calendarDate">
                                                     {{ $date->day }}
                                                 </span>
                                                 @if ($availability)

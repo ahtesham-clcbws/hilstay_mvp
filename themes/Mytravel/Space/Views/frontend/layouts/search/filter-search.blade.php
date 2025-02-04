@@ -1,5 +1,5 @@
 <div class="bravo_filter navbar-expand-lg navbar-expand-lg-collapse-block">
-    <button class="btn d-lg-none mb-5 p-0 collapsed" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="btn d-lg-none mb-5 p-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa fa-caret-square-o-down text-primary font-size-20 card-btn-arrow ml-0 font-weight-normal"></i>
         <span class="text-primary ml-2">{{ __('Filter Search') }}</span>
     </button>
@@ -38,7 +38,7 @@
                     <div class="border-0">
                         <div class="card-collapse">
                             <h3 class="mb-0">
-                                <button type="button" class="btn btn-link btn-block card-btn py-2  text-lh-3 collapsed" data-toggle="collapse" data-target="#context-filter-price" aria-expanded="false" aria-controls="context-filter-price">
+                                <button type="button" class="btn btn-link btn-block card-btn py-2  text-lh-3 collapsed" data-bs-toggle="collapse" data-bs-target="#context-filter-price" aria-expanded="false" aria-controls="context-filter-price">
                                     <span class="row align-items-center">
                                         <span class="col-9">
                                             <span class="d-block font-size-lg-15 font-size-17 font-weight-bold text-dark">{{ __("Price Range") }} ({{$currency['symbol'] ?? ''}})</span>
@@ -81,7 +81,7 @@
                     <div class="border-0">
                         <div class="card-collapse">
                             <h3 class="mb-0">
-                                <button type="button" class="btn btn-link btn-block card-btn py-2  text-lh-3 collapsed" data-toggle="collapse" data-target="#review_score">
+                                <button type="button" class="btn btn-link btn-block card-btn py-2  text-lh-3 collapsed" data-bs-toggle="collapse" data-bs-target="#review_score">
                                     <span class="row align-items-center">
                                         <span class="col-9">
                                             <span class="d-block font-size-lg-15 font-size-17 font-weight-bold text-dark text-lh-1dot4">{{ __("Review Score") }}</span>
@@ -130,7 +130,7 @@
                             <div class="border-0">
                                 <div class="card-collapse" id="cityCategoryHeadingOne">
                                     <h3 class="mb-0">
-                                        <button type="button" class="btn btn-link btn-block card-btn py-2 text-lh-3 collapsed" data-toggle="collapse" data-target="#attr_more_{{$item->id}}" aria-expanded="false" aria-controls="attr_more_{{$item->id}}">
+                                        <button type="button" class="btn btn-link btn-block card-btn py-2 text-lh-3 collapsed" data-bs-toggle="collapse" data-bs-target="#attr_more_{{$item->id}}" aria-expanded="false" aria-controls="attr_more_{{$item->id}}">
                                             <span class="row align-items-center">
                                                 <span class="col-9">
                                                     <span class="font-weight-bold font-size-17 text-dark mb-3">{{$translate->name}}</span>
@@ -172,7 +172,7 @@
                                                 @endif
                                             @endforeach
                                         </div>
-                                        <a class="link link-collapse small font-size-1 mt-2" data-toggle="collapse" href="#more_term_{{$item->id}}" role="button" aria-expanded="false" aria-controls="more_term_{{$item->id}}">
+                                        <a class="link link-collapse small font-size-1 mt-2" data-bs-toggle="collapse" href="#more_term_{{$item->id}}" role="button" aria-expanded="false" aria-controls="more_term_{{$item->id}}">
                                             <span class="link-collapse__default font-size-14">{{ __("Show all") }}</span>
                                             <span class="link-collapse__active font-size-14">{{ __("Show less") }}</span>
                                         </a>
