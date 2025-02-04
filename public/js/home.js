@@ -729,7 +729,7 @@ jQuery(function ($) {
         $('body').css('overflow','initial').find(".bravo-effect-user-bg").remove();
     })
 
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-bs-toggle="tooltip"]').tooltip();
 
     $('.dropdown-toggle').dropdown();
 

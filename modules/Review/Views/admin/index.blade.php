@@ -121,7 +121,7 @@
                                         @endif
                                         @if(!empty($service) and !empty($allReviewStats = $service->getReviewStats()))
                                             @if(!empty($metaReviews = $row->getReviewMeta()))
-                                                <a class="btn-show-info-review right" e="collapse" href="#review-{{$row->id}}">
+                                                <a class="btn-show-info-review right" data-bs-toggle="collapse" href="#review-{{$row->id}}">
                                                     {{__("More info")}}
                                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                                                 </a>

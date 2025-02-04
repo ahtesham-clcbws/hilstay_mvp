@@ -13,7 +13,7 @@
     </div>
     <input type="hidden" name="orderby" value="{{$orderby}}">
     <div class="dropdown ">
-        <span class=" dropdown-toggle"  e="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class=" dropdown-toggle"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             @switch($orderby)
                 @case("price_low_high")
                 {{ __("Price (Low to high)") }}

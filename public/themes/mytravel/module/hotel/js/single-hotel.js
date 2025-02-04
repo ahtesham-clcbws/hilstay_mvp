@@ -137,7 +137,7 @@
             total_price_html:function(){
                 if(!this.total_price) return '';
                 setTimeout(function () {
-                    $('[data-toggle="tooltip"]').tooltip();
+                    $('[data-bs-toggle="tooltip"]').tooltip();
                     $(document).trigger("scroll");
                 },200);
                 return window.bravo_format_money(this.total_price);

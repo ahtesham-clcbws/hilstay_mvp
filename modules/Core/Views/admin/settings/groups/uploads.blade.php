@@ -134,13 +134,13 @@
                 <div class="form-group">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active" e="tab" href="#SmsAdminEventCreateBooking">{{__("Administrator")}}</a>
+                            <a class="nav-link active" data-bs-toggle="tab" href="#SmsAdminEventCreateBooking">{{__("Administrator")}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " e="tab" href="#SmsVendorEventCreateBooking">{{__("Vendor")}}</a>
+                            <a class="nav-link " data-bs-toggle="tab" href="#SmsVendorEventCreateBooking">{{__("Vendor")}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " e="tab" href="#SmsUserEventCreateBooking">{{__("Customer")}}</a>
+                            <a class="nav-link " data-bs-toggle="tab" href="#SmsUserEventCreateBooking">{{__("Customer")}}</a>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -216,13 +216,13 @@
                 <div class="form-group">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active" e="tab" href="#SmsAdminEventUpdateBooking">{{__("Administrator")}}</a>
+                            <a class="nav-link active" data-bs-toggle="tab" href="#SmsAdminEventUpdateBooking">{{__("Administrator")}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " e="tab" href="#SmsVendorEventUpdateBooking">{{__("Vendor")}}</a>
+                            <a class="nav-link " data-bs-toggle="tab" href="#SmsVendorEventUpdateBooking">{{__("Vendor")}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " e="tab" href="#SmsUserEventUpdateBooking">{{__("Customer")}}</a>
+                            <a class="nav-link " data-bs-toggle="tab" href="#SmsUserEventUpdateBooking">{{__("Customer")}}</a>
                         </li>
                     </ul>
                     <div class="tab-content">

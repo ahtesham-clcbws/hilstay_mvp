@@ -1126,7 +1126,7 @@ jQuery(function ($) {
         //Actions
         travel_slick_carousel($(this))
     });
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-bs-toggle="tooltip"]').tooltip();
 
     $('.dropdown-toggle').dropdown();
 

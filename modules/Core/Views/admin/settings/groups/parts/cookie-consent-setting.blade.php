@@ -12,10 +12,10 @@
                 <div class="form-group" data-condition="enable_cookie_consent:is(1)">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active" e="tab" href="#cookiePreferences">{{__("Cookie preferences")}}</a>
+                            <a class="nav-link active" data-bs-toggle="tab" href="#cookiePreferences">{{__("Cookie preferences")}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " e="tab" href="#cookieModal">{{__("Cookie Settings Modal")}}</a>
+                            <a class="nav-link " data-bs-toggle="tab" href="#cookieModal">{{__("Cookie Settings Modal")}}</a>
                         </li>
                     </ul>
                     <div class="tab-content" >

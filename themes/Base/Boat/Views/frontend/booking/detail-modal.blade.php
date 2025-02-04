@@ -9,10 +9,10 @@
             <div class="modal-body">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" e="tab" href="#booking-detail-{{$booking->id}}">{{__("Booking Detail")}}</a>
+                        <a class="nav-link active" data-bs-toggle="tab" href="#booking-detail-{{$booking->id}}">{{__("Booking Detail")}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" e="tab" href="#booking-customer-{{$booking->id}}">
+                        <a class="nav-link" data-bs-toggle="tab" href="#booking-customer-{{$booking->id}}">
                             {{__("Customer Information")}}
                         </a>
                     </li>

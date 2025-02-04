@@ -52,7 +52,7 @@
                     <td><span class="badge badge-{{$vendorTeam->status_badge}}">{{$vendorTeam->status_text}}</span></td>
                     <td>
                         <div class="dropdown">
-                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" e="dropdown" aria-expanded="false">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 {{__("Actions")}}
                             </button>
                             <div class="dropdown-menu">

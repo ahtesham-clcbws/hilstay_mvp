@@ -22,9 +22,9 @@
                             </div>
                             <h4 class="name">{{$row->getDisplayName()}}
                                 @if($row->is_verified)
-                                    <img e="tooltip" data-placement="top" src="{{asset('icon/ico-vefified-1.svg')}}" title="{{__("Verified")}}" alt="ico-vefified-1">
+                                    <img data-bs-toggle="tooltip" data-placement="top" src="{{asset('icon/ico-vefified-1.svg')}}" title="{{__("Verified")}}" alt="ico-vefified-1">
                                 @else
-                                    <img e="tooltip" data-placement="top" src="{{asset('icon/ico-not-vefified-1.svg')}}" title="{{__("Not verified")}}" alt="ico-vefified-1">
+                                    <img data-bs-toggle="tooltip" data-placement="top" src="{{asset('icon/ico-not-vefified-1.svg')}}" title="{{__("Not verified")}}" alt="ico-vefified-1">
                                 @endif
                             </h4>
                             <span class="designation">{{ __("Member Since :time",["time"=> date("M Y",strtotime($row->created_at))]) }}</span>

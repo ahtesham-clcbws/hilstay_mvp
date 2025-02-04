@@ -15,7 +15,7 @@
             @endif
         </div>
         <div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
-            <button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist {{$row->isWishList()}}" data-id="{{$row->id}}" data-type="{{$row->type}}" e="tooltip" data-placement="top" title="" data-original-title="{{ __("Save for later") }}">
+            <button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist {{$row->isWishList()}}" data-id="{{$row->id}}" data-type="{{$row->type}}" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="{{ __("Save for later") }}">
                 <span class="flaticon-valentine-heart font-size-20"></span>
             </button>
         </div>

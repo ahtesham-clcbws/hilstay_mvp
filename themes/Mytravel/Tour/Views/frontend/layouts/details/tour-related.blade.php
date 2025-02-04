@@ -43,7 +43,7 @@
                                     <img class="card-img-top" src="{{$item->image_url}}" alt="{!! clean($translation->title) !!}">
                                 </a>
                                 <div class="position-absolute top-0 right-0 pt-3 pr-3">
-                                    <button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist {{$item->isWishList()}}" data-id="{{$item->id}}" data-type="{{$item->type}}" e="tooltip" data-placement="top" title="" data-original-title="{{ __("Save for later") }}">
+                                    <button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist {{$item->isWishList()}}" data-id="{{$item->id}}" data-type="{{$item->type}}" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="{{ __("Save for later") }}">
                                         <span class="flaticon-valentine-heart font-size-20"></span>
                                     </button>
                                 </div>

@@ -172,7 +172,7 @@ $lang_local = app()->getLocale();
                             <tr>
                                 <td class="label">
                                     {{$item['name_'.$lang_local] ?? $item['name']}}
-                                    <i class="icofont-info-circle" e="tooltip" data-placement="top" title="{{ $item['desc_'.$lang_local] ?? $item['desc'] }}"></i>
+                                    <i class="icofont-info-circle" data-bs-toggle="tooltip" data-placement="top" title="{{ $item['desc_'.$lang_local] ?? $item['desc'] }}"></i>
                                     @if(!empty($item['per_person']) and $item['per_person'] == "on")
                                         : {{$booking->total_guests}} * {{format_money( $fee_price )}}
                                     @endif

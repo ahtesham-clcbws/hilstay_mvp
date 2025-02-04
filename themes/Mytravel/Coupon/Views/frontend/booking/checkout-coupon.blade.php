@@ -17,7 +17,7 @@
                     <li class="item d-flex justify-content-between py-2">
                         <div class="label">
                             {{ $item->coupon_data['code'] }}
-                            <i e="tooltip" data-placement="top" class="icofont-info-circle" data-original-title="{{ $item->coupon_data['name'] }}"></i>
+                            <i data-bs-toggle="tooltip" data-placement="top" class="icofont-info-circle" data-original-title="{{ $item->coupon_data['name'] }}"></i>
                         </div>
                         <div class="val">
                             -{{ format_money( $item->coupon_amount ) }}

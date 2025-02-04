@@ -231,7 +231,7 @@
             @endphp
             <div class="panel">
                 <div class="panel-title"><strong>{{$obj->name}}</strong>
-                    <span e="collapse" href="#gateway_{{$k}}" class="panel-toggle btn btn-sm" ><i class="fa fa-chevron-down"></i></span>
+                    <span data-bs-toggle="collapse" href="#gateway_{{$k}}" class="panel-toggle btn btn-sm" ><i class="fa fa-chevron-down"></i></span>
                 </div>
                 <div class="panel-body collapse" id="gateway_{{$k}}">
                     <div class="" >

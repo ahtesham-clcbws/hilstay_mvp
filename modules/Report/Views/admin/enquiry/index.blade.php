@@ -82,7 +82,7 @@
                                         <td>{{display_datetime($row->updated_at)}}</td>
                                         <td>
                                             <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" e="dropdown" aria-expanded="false">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                                                     {{__("Actions")}}
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

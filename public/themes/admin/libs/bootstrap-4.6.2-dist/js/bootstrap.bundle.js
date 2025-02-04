@@ -400,9 +400,9 @@
   var EVENT_FOCUS_BLUR_DATA_API = "focus" + EVENT_KEY$9 + DATA_API_KEY$6 + " " + ("blur" + EVENT_KEY$9 + DATA_API_KEY$6);
   var EVENT_LOAD_DATA_API$2 = "load" + EVENT_KEY$9 + DATA_API_KEY$6;
   var SELECTOR_DATA_TOGGLE_CARROT = '[data-toggle^="button"]';
-  var SELECTOR_DATA_TOGGLES = '[data-toggle="buttons"]';
-  var SELECTOR_DATA_TOGGLE$4 = '[data-toggle="button"]';
-  var SELECTOR_DATA_TOGGLES_BUTTONS = '[data-toggle="buttons"] .btn';
+  var SELECTOR_DATA_TOGGLES = '[data-bs-toggle="buttons"]';
+  var SELECTOR_DATA_TOGGLE$4 = '[data-bs-toggle="button"]';
+  var SELECTOR_DATA_TOGGLES_BUTTONS = '[data-bs-toggle="buttons"] .btn';
   var SELECTOR_INPUT = 'input:not([type="hidden"])';
   var SELECTOR_ACTIVE$2 = '.active';
   var SELECTOR_BUTTON = '.btn';
@@ -1183,7 +1183,7 @@
   var EVENT_HIDDEN$4 = "hidden" + EVENT_KEY$7;
   var EVENT_CLICK_DATA_API$3 = "click" + EVENT_KEY$7 + DATA_API_KEY$4;
   var SELECTOR_ACTIVES = '.show, .collapsing';
-  var SELECTOR_DATA_TOGGLE$3 = '[data-toggle="collapse"]';
+  var SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="collapse"]';
   var Default$6 = {
     toggle: true,
     parent: ''
@@ -4156,7 +4156,7 @@
   var EVENT_CLICK_DATA_API$2 = "click" + EVENT_KEY$6 + DATA_API_KEY$3;
   var EVENT_KEYDOWN_DATA_API = "keydown" + EVENT_KEY$6 + DATA_API_KEY$3;
   var EVENT_KEYUP_DATA_API = "keyup" + EVENT_KEY$6 + DATA_API_KEY$3;
-  var SELECTOR_DATA_TOGGLE$2 = '[data-toggle="dropdown"]';
+  var SELECTOR_DATA_TOGGLE$2 = '[data-bs-toggle="dropdown"]';
   var SELECTOR_FORM_CHILD = '.dropdown form';
   var SELECTOR_MENU = '.dropdown-menu';
   var SELECTOR_NAVBAR_NAV = '.navbar-nav';
@@ -4654,7 +4654,7 @@
   var EVENT_CLICK_DATA_API$1 = "click" + EVENT_KEY$5 + DATA_API_KEY$2;
   var SELECTOR_DIALOG = '.modal-dialog';
   var SELECTOR_MODAL_BODY = '.modal-body';
-  var SELECTOR_DATA_TOGGLE$1 = '[data-toggle="modal"]';
+  var SELECTOR_DATA_TOGGLE$1 = '[data-bs-toggle="modal"]';
   var SELECTOR_DATA_DISMISS$1 = '[data-dismiss="modal"]';
   var SELECTOR_FIXED_CONTENT = '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top';
   var SELECTOR_STICKY_CONTENT = '.sticky-top';
@@ -5056,9 +5056,9 @@
     // todo (fat): these should probably be refactored out of modal.js
     // ----------------------------------------------------------------------
     ;
-
-    _proto._adjustDialog = function _adjustDialog() {
-      var isModalOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
+data-bs-toggle="
+    _proto._adjustDialog = functidata-bs-toggle="log() {
+      var isModalOverflowing = this._eledata-bs-toggle="ight > document.documentElement.clientHeight;
 
       if (!this._isBodyOverflowing && isModalOverflowing) {
         this._element.style.paddingLeft = this._scrollbarWidth + "px";
@@ -5839,7 +5839,7 @@
       if (event) {
         context._activeTrigger[event.type === 'focusin' ? TRIGGER_FOCUS : TRIGGER_HOVER] = true;
       }
-
+data-bs-toggle="
       if ($__default["default"](context.getTipElement()).hasClass(CLASS_NAME_SHOW$3) || context._hoverState === HOVER_STATE_SHOW) {
         context._hoverState = HOVER_STATE_SHOW;
         return;
@@ -6540,7 +6540,7 @@
   var SELECTOR_NAV_LIST_GROUP = '.nav, .list-group';
   var SELECTOR_ACTIVE = '.active';
   var SELECTOR_ACTIVE_UL = '> li > .active';
-  var SELECTOR_DATA_TOGGLE = '[data-toggle="tab"], [data-toggle="pill"], [data-toggle="list"]';
+  var SELECTOR_DATA_TOGGLE = '[data-bs-toggle="tab"], [data-bs-toggle="pill"], [data-bs-toggle="list"]';
   var SELECTOR_DROPDOWN_TOGGLE = '.dropdown-toggle';
   var SELECTOR_DROPDOWN_ACTIVE_CHILD = '> .dropdown-menu .active';
   /**
@@ -6969,3 +6969,4 @@
 
 }));
 //# sourceMappingURL=bootstrap.bundle.js.map
+data-bs-toggle="

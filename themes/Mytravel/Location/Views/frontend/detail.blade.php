@@ -44,7 +44,7 @@
                                 @endphp
                                 @if($data[$type]->count()>0)
                                     <li class="nav-item">
-                                        <a class="nav-link font-weight-medium {{$i==0?'active':""}}" id="#module-{{$type}}-tab" e="pill" href="#module-{{$type}}" role="tab" aria-controls="#module-{{$type}}" aria-selected="true">
+                                        <a class="nav-link font-weight-medium {{$i==0?'active':""}}" id="#module-{{$type}}-tab" data-bs-toggle="pill" href="#module-{{$type}}" role="tab" aria-controls="#module-{{$type}}" aria-selected="true">
                                             <div class="d-flex flex-column flex-md-row  position-relative text-dark align-items-center">
                                                 <span class="tabtext font-weight-semi-bold">{{call_user_func([$moduleClass,'getModelName'])}}</span>
                                             </div>

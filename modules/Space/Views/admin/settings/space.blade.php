@@ -116,13 +116,13 @@
                 <div class="form-group">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active" e="tab" href="#seo_1">{{__("General Options")}}</a>
+                            <a class="nav-link active" data-bs-toggle="tab" href="#seo_1">{{__("General Options")}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" e="tab" href="#seo_2">{{__("Share Facebook")}}</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#seo_2">{{__("Share Facebook")}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" e="tab" href="#seo_3">{{__("Share Twitter")}}</a>
+                            <a class="nav-link" data-bs-toggle="tab" href="#seo_3">{{__("Share Twitter")}}</a>
                         </li>
                     </ul>
                     <div class="tab-content" >

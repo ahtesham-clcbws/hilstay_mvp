@@ -389,7 +389,7 @@ var Button = function ($$$1) {
   };
   var Selector = {
     DATA_TOGGLE_CARROT: '[data-toggle^="button"]',
-    DATA_TOGGLE: '[data-toggle="buttons"]',
+    DATA_TOGGLE: '[data-bs-toggle="buttons"]',
     INPUT: 'input',
     ACTIVE: '.active',
     BUTTON: '.btn'
@@ -1072,7 +1072,7 @@ var Collapse = function ($$$1) {
   };
   var Selector = {
     ACTIVES: '.show, .collapsing',
-    DATA_TOGGLE: '[data-toggle="collapse"]'
+    DATA_TOGGLE: '[data-bs-toggle="collapse"]'
     /**
      * ------------------------------------------------------------------------
      * Class Definition
@@ -3882,7 +3882,7 @@ var Dropdown = function ($$$1) {
     POSITION_STATIC: 'position-static'
   };
   var Selector = {
-    DATA_TOGGLE: '[data-toggle="dropdown"]',
+    DATA_TOGGLE: '[data-bs-toggle="dropdown"]',
     FORM_CHILD: '.dropdown form',
     MENU: '.dropdown-menu',
     NAVBAR_NAV: '.navbar-nav',
@@ -4351,7 +4351,7 @@ var Modal = function ($$$1) {
   };
   var Selector = {
     DIALOG: '.modal-dialog',
-    DATA_TOGGLE: '[data-toggle="modal"]',
+    DATA_TOGGLE: '[data-bs-toggle="modal"]',
     DATA_DISMISS: '[data-dismiss="modal"]',
     FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
     STICKY_CONTENT: '.sticky-top',
@@ -4742,7 +4742,7 @@ var Modal = function ($$$1) {
         $$$1('body').data('padding-right', actualPadding).css('padding-right', parseFloat(calculatedPadding) + this._scrollbarWidth + "px");
       }
     };
-
+data-bs-toggle="
     _proto._resetScrollbar = function _resetScrollbar() {
       // Restore fixed content padding
       $$$1(Selector.FIXED_CONTENT).each(function (index, element) {
@@ -5425,7 +5425,7 @@ var Tooltip = function ($$$1) {
 
     _proto._cleanTipClass = function _cleanTipClass() {
       var $tip = $$$1(this.getTipElement());
-      var tabClass = $tip.attr('class').match(BSCLS_PREFIX_REGEX);
+      var tabClass data-bs-toggle="class').match(BSCLS_PREFIX_REGEX);
 
       if (tabClass !== null && tabClass.length > 0) {
         $tip.removeClass(tabClass.join(''));
@@ -6078,7 +6078,7 @@ var Tab = function ($$$1) {
     NAV_LIST_GROUP: '.nav, .list-group',
     ACTIVE: '.active',
     ACTIVE_UL: '> li > .active',
-    DATA_TOGGLE: '[data-toggle="tab"], [data-toggle="pill"], [data-toggle="list"]',
+    DATA_TOGGLE: '[data-bs-toggle="tab"], [data-bs-toggle="pill"], [data-bs-toggle="list"]',
     DROPDOWN_TOGGLE: '.dropdown-toggle',
     DROPDOWN_ACTIVE_CHILD: '> .dropdown-menu .active'
     /**
@@ -6326,3 +6326,4 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 //# sourceMappingURL=bootstrap.bundle.js.map
+data-bs-toggle="

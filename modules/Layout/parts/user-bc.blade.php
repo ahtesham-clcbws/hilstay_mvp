@@ -21,7 +21,7 @@
         @endforeach
     </ul>
     <div class="dropdown dropdown-notifications float-right" style="min-width: 0">
-        <a e="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+        <a data-bs-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-bell m-1 p-1"></i>
             <span class="badge badge-danger notification-icon">{{$countUnread}}</span>
         </a>

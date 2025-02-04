@@ -71,10 +71,10 @@
                 <div class="form-group">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active" e="tab" href="#NewRequestPlanAdmin">{{__("Administrator")}}</a>
+                            <a class="nav-link active" data-bs-toggle="tab" href="#NewRequestPlanAdmin">{{__("Administrator")}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " e="tab" href="#NewRequestPlanUser">{{__("Customer")}}</a>
+                            <a class="nav-link " data-bs-toggle="tab" href="#NewRequestPlanUser">{{__("Customer")}}</a>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -144,10 +144,10 @@
                 <div class="form-group">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active" e="tab" href="#UpdateRequestPlanAdmin">{{__("Administrator")}}</a>
+                            <a class="nav-link active" data-bs-toggle="tab" href="#UpdateRequestPlanAdmin">{{__("Administrator")}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " e="tab" href="#UpdateRequestPlanUser">{{__("Customer")}}</a>
+                            <a class="nav-link " data-bs-toggle="tab" href="#UpdateRequestPlanUser">{{__("Customer")}}</a>
                         </li>
                     </ul>
                     <div class="tab-content">

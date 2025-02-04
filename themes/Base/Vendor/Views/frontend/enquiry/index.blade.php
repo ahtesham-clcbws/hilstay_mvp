@@ -51,7 +51,7 @@
                                         <td>{{display_datetime($row->updated_at)}}</td>
                                         <td width="2%">
                                             @if(!empty( $has_permission_enquiry_update ))
-                                                <a class="btn btn-xs btn-info btn-make-as" e="dropdown">
+                                                <a class="btn btn-xs btn-info btn-make-as" data-bs-toggle="dropdown">
                                                     <i class="icofont-ui-settings"></i>
                                                     {{__("Action")}}
                                                 </a>

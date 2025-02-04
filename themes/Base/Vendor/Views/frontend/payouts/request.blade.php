@@ -6,7 +6,7 @@
     </div>
     <br>
     <div class="">
-        <a href="#vendor_create_request" al" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> {{__("Create request")}}</a>
+        <a href="#vendor_create_request" data-bs-toggle="modal" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> {{__("Create request")}}</a>
     </div>
 @else
     <div class="alert alert-warning">{{__("Your balance is zero")}}</div>

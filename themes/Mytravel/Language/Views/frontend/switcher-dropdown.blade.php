@@ -7,7 +7,7 @@
     <li class="dropdown">
         @foreach($languages as $language)
             @if($locale == $language->locale)
-                <a href="#" e="dropdown" class="is_login">
+                <a href="#" data-bs-toggle="dropdown" class="is_login">
                     @if($language->flag)
                         <span class="flag-icon flag-icon-{{$language->flag}}"></span>
                     @endif
