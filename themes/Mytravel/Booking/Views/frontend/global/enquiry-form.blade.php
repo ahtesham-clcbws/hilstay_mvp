@@ -3,7 +3,7 @@
         <div class="modal-content enquiry_form_modal_form">
             <div class="modal-header">
                 <h5 class="modal-title">{{__("Enquiry")}}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -30,7 +30,7 @@
                 <div class="message_box"></div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">{{__('Close')}}</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{__('Close')}}</button>
                 <button type="button" class="btn btn-primary btn-submit-enquiry">{{__("Send now")}}
                 <i class="fa icon-loading fa-spinner fa-spin fa-fw" style="display: none"></i>
                 </button>

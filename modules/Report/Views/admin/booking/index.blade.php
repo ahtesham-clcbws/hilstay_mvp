@@ -138,7 +138,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">{{__('Booking ID: #')}} <span class="user_id"></span></h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
@@ -146,7 +146,7 @@
                                 <div class="d-flex justify-content-center">{{__("Loading...")}}</div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">{{__('Close')}}</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{__('Close')}}</button>
                             </div>
                         </div>
                     </div>

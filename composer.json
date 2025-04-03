@@ -36,6 +36,7 @@
         "pusher/pusher-php-server": "^7.0",
         "rachidlaasri/laravel-installer": "^4.0",
         "rap2hpoutre/laravel-log-viewer": "^2.2.0",
+        "razorpay/razorpay": "2.*",
         "simplesoftwareio/simple-qrcode": "^4.2.0",
         "spatie/laravel-google-cloud-storage": "^2.0.3",
         "stripe/stripe-php": "^7.113",

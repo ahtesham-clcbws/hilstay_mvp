@@ -231,7 +231,7 @@
 
 @push('js')
 {!! App\Helpers\MapEngine::scripts() !!}
-<script>
+{{--<script>
     jQuery(function($) {
         "use strict"
         <?php if ($row->map_lat && $row->map_lng) { ?>
@@ -250,7 +250,7 @@
             });
         <?php } ?>
     })
-</script>
+</script>--}}
 <script>
     // dont change to php
     var bravo_booking_data = {!!json_encode($booking_data) !!}

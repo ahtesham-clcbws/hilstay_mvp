@@ -1,13 +1,10 @@
-<div class="item">
-    <a href="{{ route("space.search",['_layout'=>'map']) }}">{{__("Show on the map")}}</a>
-</div>
-<div class="item">
+<div class="item text-right d-block">
     @php
         $param = request()->input();
         $orderby =  request()->input("orderby");
     @endphp
-    <div class="item-title">
-        {{ __("Sort by:") }}
+    <div class="item-title d-block mb-3">
+        {{ __("Sort by") }}
     </div>
     <div class="dropdown">
         <span class=" dropdown-toggle"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

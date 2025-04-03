@@ -84,7 +84,7 @@
                     @endif
                     @if(session()->has('errors'))
                         <div class="alert alert-danger" id="error_alert">
-                            <button type="button" class="close" id="close_alert" data-dismiss="alert" aria-hidden="true">
+                            <button type="button" class="close" id="close_alert" data-bs-dismiss="alert" aria-hidden="true">
                                  <i class="fa fa-close" aria-hidden="true"></i>
                             </button>
                             <h4>

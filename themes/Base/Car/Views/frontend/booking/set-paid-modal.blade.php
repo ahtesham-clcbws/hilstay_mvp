@@ -38,7 +38,7 @@
             <!-- Modal footer -->
             <div class="modal-footer">
                 <span class="btn btn btn-primary" id="set_paid_btn" data-id="{{$booking->id}}">{{__("Save")}}</span>
-                <span class="btn btn-secondary" data-dismiss="modal">{{__("Close")}}</span>
+                <span class="btn btn-secondary" data-bs-dismiss="modal">{{__("Close")}}</span>
             </div>
         </div>
     </div>

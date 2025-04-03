@@ -49,7 +49,7 @@ $desc = $meta_seo['seo_desc'] ?? $meta_seo['service_desc'] ?? '';
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">{{__("Search Engine")}}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -163,7 +163,7 @@ $desc = $meta_seo['seo_desc'] ?? $meta_seo['service_desc'] ?? '';
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" data-dismiss="modal" class="btn btn-primary">{{__("Apply")}}</button>
+                <button type="button" data-bs-dismiss="modal" class="btn btn-primary">{{__("Apply")}}</button>
             </div>
         </div>
     </div>

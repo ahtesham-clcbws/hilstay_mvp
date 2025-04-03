@@ -1,4 +1,5 @@
 <?php
+
 namespace Modules\Booking\Gateways;
 
 use App\Currency;
@@ -134,9 +135,9 @@ class PaypalGateway extends BaseGateway
             $booking->status = $booking::UNPAID;
             $booking->payment_id = $payment->id;
             $booking->save();
-            try{
+            try {
                 event(new BookingCreatedEvent($booking));
-            } catch(\Swift_TransportException $e){
+            } catch (\Swift_TransportException $e) {
                 Log::warning($e->getMessage());
             }
             // redirect to offsite payment gateway
@@ -166,13 +167,12 @@ class PaypalGateway extends BaseGateway
                     $payment->logs = \GuzzleHttp\json_encode($response->getData());
                     $payment->save();
                 }
-                try{
-//                    $oldPaynow = (float)$booking->pay_now;
+                try {
+                    //                    $oldPaynow = (float)$booking->pay_now;
                     $booking->paid += (float)$booking->pay_now;
-//                    $booking->pay_now = (float)($oldPaynow - $data['originalAmount'] < 0 ? 0 : $oldPaynow - $data['originalAmount']);
+                    //                    $booking->pay_now = (float)($oldPaynow - $data['originalAmount'] < 0 ? 0 : $oldPaynow - $data['originalAmount']);
                     $booking->markAsPaid();
-
-                } catch(\Swift_TransportException $e){
+                } catch (\Swift_TransportException $e) {
                     Log::warning($e->getMessage());
                 }
                 return redirect($booking->getDetailUrl())->with("success", __("You payment has been processed successfully"));
@@ -184,10 +184,9 @@ class PaypalGateway extends BaseGateway
                     $payment->logs = \GuzzleHttp\json_encode($response->getData());
                     $payment->save();
                 }
-                try{
+                try {
                     $booking->markAsPaymentFailed();
-
-                } catch(\Swift_TransportException $e){
+                } catch (\Swift_TransportException $e) {
                     Log::warning($e->getMessage());
                 }
                 return redirect($booking->getDetailUrl())->with("error", __("Payment Failed"));
@@ -209,7 +208,7 @@ class PaypalGateway extends BaseGateway
         $c = $request->query('pid');
         $payment = Payment::where('code', $c)->first();
 
-        if (!empty($payment) and in_array($payment->status,['draft'])) {
+        if (!empty($payment) and in_array($payment->status, ['draft'])) {
             $this->getGateway();
             $data = $this->handlePurchaseDataNormal([
                 'amount'        => (float)$payment->amount,
@@ -218,14 +217,13 @@ class PaypalGateway extends BaseGateway
             $response = $this->gateway->completePurchase($data)->send();
             if ($response->isSuccessful()) {
                 return $payment->markAsCompleted(\GuzzleHttp\json_encode($response->getData()));
-
             } else {
                 return $payment->markAsFailed(\GuzzleHttp\json_encode($response->getData()));
             }
         }
-        if($payment){
-            if($payment->status == 'cancel'){
-                return [false,__("Your payment has been canceled")];
+        if ($payment) {
+            if ($payment->status == 'cancel') {
+                return [false, __("Your payment has been canceled")];
             }
         }
         return [false];
@@ -243,12 +241,12 @@ class PaypalGateway extends BaseGateway
 
         $response = $this->gateway->purchase($data)->send();
 
-        if($response->isSuccessful()){
+        if ($response->isSuccessful()) {
             return [true];
-        }elseif($response->isRedirect()){
-            return [true,false,$response->getRedirectUrl()];
-        }else{
-            return [false,$response->getMessage()];
+        } elseif ($response->isRedirect()) {
+            return [true, false, $response->getRedirectUrl()];
+        } else {
+            return [false, $response->getMessage()];
         }
     }
 
@@ -315,7 +313,7 @@ class PaypalGateway extends BaseGateway
                 $payment->exchange_rate = $exchange_rate;
                 $payment->save();
             }
-            $data['amount'] = number_format( $payment->amount / $exchange_rate , 2 );
+            $data['amount'] = number_format($payment->amount / $exchange_rate, 2);
             $data['currency'] = $convert_to;
         }
         return $data;
@@ -341,7 +339,7 @@ class PaypalGateway extends BaseGateway
                 $payment->exchange_rate = $exchange_rate;
             }
             $data['originalAmount'] = (float)$booking->pay_now;
-            $data['amount'] = number_format( (float)$booking->pay_now / $exchange_rate , 2 );
+            $data['amount'] = number_format((float)$booking->pay_now / $exchange_rate, 2);
             $data['currency'] = $convert_to;
         }
         return $data;

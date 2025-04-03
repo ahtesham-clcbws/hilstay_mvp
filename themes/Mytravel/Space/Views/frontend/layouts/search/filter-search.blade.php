@@ -144,8 +144,15 @@
                                         </button>
                                     </h3>
                                 </div>
+                                <style>
+                                    .attributesSearchCard {
+                                        max-height: 200px;
+                                        overflow-y: auto;
+                                        transition: max-height 0.3s ease;
+                                    }
+                                </style>
                                 <div id="attr_more_{{$item->id}}" class="collapse show" aria-labelledby="cityCategoryHeadingOne" data-parent="#attr_{{$item->id}}">
-                                    <div class="card-body pt-0 mt-1  pb-4">
+                                    <div class="card-body pt-0 mt-1  pb-4 attributesSearchCard">
                                         @foreach($item->terms as $key => $term)
                                             @if($key <= 2)
                                                 @php $translate = $term->translate(); @endphp

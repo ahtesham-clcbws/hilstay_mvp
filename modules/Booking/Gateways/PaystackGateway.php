@@ -112,8 +112,7 @@ class PaystackGateway extends BaseGateway
             response()->json([
                 'url' => $response['data']['authorization_url']
             ])->send();
-        }
-        else {
+        } else {
             throw new Exception('Paystack Gateway: ' . $response->getMessage());
         }
     }
@@ -124,11 +123,10 @@ class PaystackGateway extends BaseGateway
         $response = $this->gateway->getPaymentData();
         if ($response['status']) {
             $metadata = $response['data']['metadata'];
-            if (!empty($metadata['normal_checkout']) and $metadata['normal_checkout']=='1') {
-//                redirect to confirm normal
+            if (!empty($metadata['normal_checkout']) and $metadata['normal_checkout'] == '1') {
+                //                redirect to confirm normal
                 return redirect(url($metadata['returnUrl'], $request->all()));
-            }
-            else {
+            } else {
                 $booking = Booking::where('code', $metadata['code'])->first();
                 if (!empty($booking) and in_array($booking->status, [$booking::UNPAID])) {
 
@@ -142,13 +140,11 @@ class PaystackGateway extends BaseGateway
                         try {
                             $booking->paid += (float)$booking->pay_now;
                             $booking->markAsPaid();
-
                         } catch (\Exception $e) {
                             Log::warning($e->getMessage());
                         }
                         return redirect($booking->getDetailUrl())->with("success", __("You payment has been processed successfully"));
-                    }
-                    else {
+                    } else {
                         $payment = $booking->payment;
                         if ($payment) {
                             $payment->status = 'fail';
@@ -157,7 +153,6 @@ class PaystackGateway extends BaseGateway
                         }
                         try {
                             $booking->markAsPaymentFailed();
-
                         } catch (\Exception $e) {
                             Log::warning($e->getMessage());
                         }
@@ -170,8 +165,6 @@ class PaystackGateway extends BaseGateway
             }
         }
         return redirect(url('/'));
-
-
     }
 
     /**
@@ -188,12 +181,10 @@ class PaystackGateway extends BaseGateway
                 if (!empty($payment) and in_array($payment->status, ['draft'])) {
                     if ($response['status'] == 'success') {
                         return $payment->markAsCompleted(\GuzzleHttp\json_encode($response));
-                    }
-                    else {
+                    } else {
                         return $payment->markAsFailed(\GuzzleHttp\json_encode($response));
                     }
-                }
-                else {
+                } else {
                     if ($payment->status == 'cancel') {
                         return [false, __("Your payment has been canceled")];
                     }
@@ -212,8 +203,7 @@ class PaystackGateway extends BaseGateway
         $response = $this->gateway->getAuthorizationResponse($data);
         if (!empty($response['status'] and !empty($response['data']['authorization_url']))) {
             return [true, false, $response['data']['authorization_url']];
-        }
-        else {
+        } else {
             return [false, $response->getMessage()];
         }
     }
@@ -239,8 +229,7 @@ class PaystackGateway extends BaseGateway
         }
         if (!empty($booking)) {
             return redirect($booking->getDetailUrl());
-        }
-        else {
+        } else {
             return redirect(url('/'));
         }
     }
@@ -253,13 +242,13 @@ class PaystackGateway extends BaseGateway
             $response = $this->gateway->getPaymentData();
             if (!empty($response['data']) and !empty($response['data']['metadata'])) {
                 $metadata = $response['data']['metadata'];
-                if (!empty($metadata['normal_checkout']) and $metadata['normal_checkout']=='1') {
+                if (!empty($metadata['normal_checkout']) and $metadata['normal_checkout'] == '1') {
                     $booking = Booking::where('code', $metadata['code'])->first();
                     if (!empty($booking) and !in_array($booking->status, [
-                            $booking::PAID,
-                            $booking::COMPLETED,
-                            $booking::CANCELLED
-                        ])) {
+                        $booking::PAID,
+                        $booking::COMPLETED,
+                        $booking::CANCELLED
+                    ])) {
                         if (in_array($response['event'], ['charge.success', 'paymentrequest.success'])) {
                             $payment = $booking->payment;
                             if ($payment) {
@@ -270,7 +259,6 @@ class PaystackGateway extends BaseGateway
                             try {
                                 $booking->paid += (float)($response['data']['amount'] / 100);
                                 $booking->markAsPaid();
-
                             } catch (\Exception $e) {
                                 return response()->json(['status' => 'error', "message" => $e->getMessage()]);
                             }
@@ -280,18 +268,16 @@ class PaystackGateway extends BaseGateway
                     }
                     if (!empty($booking)) {
                         return response()->json(['status' => 'success', "message" => __("not update status " . $response['event'])]);
-                    }
-                    else {
+                    } else {
                         return response()->json(['status' => 'error', "message" => __("No information found")]);
                     }
-                }
-                else {
+                } else {
                     $payment = Payment::where('code', $metadata['code'])->first();
                     if (!empty($booking) and !in_array($payment->status, [
-                            $booking::PAID,
-                            $booking::COMPLETED,
-                            $booking::CANCELLED
-                        ])) {
+                        $booking::PAID,
+                        $booking::COMPLETED,
+                        $booking::CANCELLED
+                    ])) {
                         if (in_array($response['event'], ['charge.success', 'paymentrequest.success'])) {
                             try {
                                 $payment->markAsCompleted(\GuzzleHttp\json_encode($response));
@@ -299,21 +285,14 @@ class PaystackGateway extends BaseGateway
                             } catch (\Exception $e) {
                                 return response()->json(['status' => 'error', "message" => $e->getMessage()]);
                             }
-                        }
-                        else {
+                        } else {
                             return response()->json(['status' => 'success', "message" => __("You payment has been processed successfully before")]);
                         }
                     }
-
                 }
-
             }
-
-
         } catch (\Exception $exception) {
-
         }
-
     }
 
     public function getGateway()

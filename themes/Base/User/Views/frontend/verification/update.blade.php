@@ -44,7 +44,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">{{__('Verify Phone')}}</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -53,7 +53,7 @@
                     <input type="hidden" name="verified_phone" class="form-control" id="verified_phone">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">{{__('Close')}}</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{__('Close')}}</button>
                     <button type="button" onclick="verifyPhone()" class="btn btn-primary">{{__('Verify')}}</button>
                 </div>
             </div>

@@ -157,7 +157,7 @@
                         type="button"
                         @click="hideModal"
                         class="close"
-                        data-dismiss="modal"
+                        data-bs-dismiss="modal"
                         aria-label="Close"
                     >
                         <span aria-hidden="true">&times;</span>
@@ -179,7 +179,7 @@
                         type="button"
                         class="btn btn-secondary"
                         @click="hideModal"
-                        data-dismiss="modal"
+                        data-bs-dismiss="modal"
                     >@{{template_i18n.cancel}}
                     </button>
                     <button

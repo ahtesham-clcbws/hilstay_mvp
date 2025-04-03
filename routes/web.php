@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RazorpayController;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
@@ -39,4 +40,7 @@ Route::get(config('admin.admin_route_prefix') . '/logs', '\Rap2hpoutre\LaravelLo
 
 Route::get('/install', 'InstallerController@redirectToRequirement')->name('LaravelInstaller::welcome');
 Route::get('/install/environment', 'InstallerController@redirectToWizard')->name('LaravelInstaller::environment');
+
+Route::any('booking/razorpay/{bookingId}', [RazorpayController::class, 'processPayment']);
+Route::any('booking/razorpay/success/{bookingId}', [RazorpayController::class, 'successPayment'])->name('razorpay_success');
 

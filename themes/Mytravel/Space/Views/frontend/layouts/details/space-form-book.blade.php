@@ -1,7 +1,7 @@
 <div class="mb-4">
-    <div class="bravo_single_book_wrap">
-        <div id="bravo_space_book_app" class="bravo_single_book " v-cloak>
-            <div class="border border-color-7 rounded mb-5">
+    <div class="bravo_single_book_wrap modal fade" id="bravo_single_book_wrap">
+        <div id="bravo_space_book_app" class="bravo_single_book modal-dialog" v-cloak>
+            <div class="border border-color-7 rounded mb-5 modal-content">
                 <div class="border-bottom">
                     @if($row->discount_percent)
                         <div class="sale-box">

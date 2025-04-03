@@ -71,7 +71,7 @@
             </div>
             <!-- Modal footer -->
             <div class="modal-footer">
-                <span class="btn btn-secondary" data-dismiss="modal">{{__("Close")}}</span>
+                <span class="btn btn-secondary" data-bs-dismiss="modal">{{__("Close")}}</span>
             </div>
         </div>
     </div>

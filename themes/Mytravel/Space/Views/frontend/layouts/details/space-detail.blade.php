@@ -22,9 +22,10 @@
                 <i class="flaticon-like font-size-18 text-dark"></i>
             </span>
         </li>
-        <li class="list-group-item px-1 border-0">
+        <li class="list-group-item px-1 border-0 dropdown">
             <a id="shareDropdownInvoker{{$row->id}}"
                 class="dropdown-nav-link dropdown-toggle d-flex height-45 width-45 border rounded border-width-2 flex-content-center"
+                data-bs-toggle="dropdown"
                 href="javascript:;" role="button" aria-controls="shareDropdown{{$row->id}}" aria-haspopup="true" aria-expanded="false" data-unfold-event="hover"
                 data-unfold-target="#shareDropdown{{$row->id}}" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
                 <i class="flaticon-share font-size-18 text-dark"></i>
@@ -46,18 +47,34 @@
         display: flex !important;
         gap: 25px;
     }
-    .type-list li {
-    }
-    .type-list li > div {
+
+    .type-list li {}
+
+    .type-list li>div {
         font-size: 14px !important;
     }
+
     .type-list svg.icon {
         margin-top: 3px;
+    }
+
+    @media (max-width: 576px) {
+        #main-attributes {
+            display: flex !important;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        #main-attributes .d-flex {
+            width: 46%;
+        gap: 5px;
+        }
     }
 </style>
 
 <div class="border-bottom mb-4 pb-1 d-md-flex justify-content-between align-items-end">
-    <ul class="list-group list-group-borderless list-group-horizontal d-flex type-list">
+    <ul class="list-group list-group-borderless list-group-horizontal-md d-flex type-list" id="main-attributes">
         @if($row->bedroom)
         <li class="d-flex">
             <svg xmlns="http://www.w3.org/2000/svg" class="text-primary icon" viewBox="0 0 32 32" width="14" height="14">

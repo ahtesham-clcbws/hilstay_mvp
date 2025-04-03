@@ -278,7 +278,6 @@ class BookingController extends \App\Http\Controllers\Controller
                     $booking->wallet_total_used = floatval($wallet_total_used);
                     $booking->wallet_credit_used = money_to_credit($wallet_total_used, true);
                 }
-
             }
 
             $booking->pay_now = max(0, $booking->pay_now - $wallet_total_used);
@@ -308,7 +307,6 @@ class BookingController extends \App\Http\Controllers\Controller
                 $transaction = $user->withdraw($booking->wallet_credit_used, [
                     'wallet_total_used' => $booking->wallet_total_used
                 ], $booking->id);
-
             } catch (\Exception $exception) {
                 return $this->sendError($exception->getMessage());
             }
@@ -316,7 +314,7 @@ class BookingController extends \App\Http\Controllers\Controller
         }
         $booking->save();
 
-//        event(new VendorLogPayment($booking));
+        //        event(new VendorLogPayment($booking));
 
         if (Auth::check()) {
             $user = auth()->user();
@@ -649,7 +647,7 @@ class BookingController extends \App\Http\Controllers\Controller
         event(new SetPaidAmountEvent($booking));
         if ($remain == 0) {
             $booking->status = $booking::PAID;
-//            $booking->sendStatusUpdatedEmails();
+            //            $booking->sendStatusUpdatedEmails();
             event(new BookingUpdatedEvent($booking));
         }
 

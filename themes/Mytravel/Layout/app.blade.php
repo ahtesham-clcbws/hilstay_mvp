@@ -2,6 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="{{$html_class ?? ''}}">
 <head>
     <meta charset="utf-8">
+    <meta name="developer" content="ahtesham">
+    <meta name="layout" content="theme app layout">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -67,6 +69,8 @@
     {!! setting_item_with_lang_raw('head_scripts') !!}
 
     @php event(new \Modules\Layout\Events\LayoutEndHead()); @endphp
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
 </head>
 <body dir="{{setting_item_with_lang('enable_rtl') ? 'rtl' : 'ltr'}}" class="frontend-page {{$body_class ?? ''}} @if(!empty($is_home) or !empty($header_transparent)) header_transparent @endif @if(setting_item_with_lang('enable_rtl')) is-rtl @endif @if(is_api()) is_api @endif">

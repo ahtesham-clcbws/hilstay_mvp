@@ -21,7 +21,7 @@
                                         </svg>
                                     </figure>
                                 </div>
-                                <h6 class="font-weight-bold text-gray-3 mb-0">{{$item['title']}}</h6>
+                                <h6 class="font-weight-bold text-gray-3 mb-0 text-left text-start">{{$item['title']}}</h6>
                             </button>
                         </h5>
                     </div>

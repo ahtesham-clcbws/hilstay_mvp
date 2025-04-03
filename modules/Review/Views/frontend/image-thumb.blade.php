@@ -6,7 +6,7 @@
                 <div class="image_show_full w-100"></div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">{{__('Close')}}</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{__('Close')}}</button>
                 </button>
             </div>
         </div>
