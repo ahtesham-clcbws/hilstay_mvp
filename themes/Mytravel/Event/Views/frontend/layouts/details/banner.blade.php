@@ -18,7 +18,7 @@
                 </nav>
             </div>
         @endif
-        <div class="mb-4 mb-lg-8">
+        <div class="mb-4 mb-lg-8 d-none d-md-block">
             <img class="img-fluid" src="{{ $row->getBannerImageUrlAttribute('full')}}" alt="{!! clean($translation->title) !!}">
             <div class="container">
                 <div class="position-relative">

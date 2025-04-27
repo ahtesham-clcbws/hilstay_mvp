@@ -155,6 +155,23 @@
     <script src="{{asset('/module/user/js/2fa.js')}}"></script>
 @endif
 
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            width: '100%',
+            autoplay: true,
+            // interval: 200,
+            // pauseOnHover: false,
+            // pauseOnFocus: false,
+            lazyLoad: 'nearby',
+            keyboard: true
+        });
+        splide.mount();
+    });
+</script>
 {!! \App\Helpers\Assets::js(true) !!}
 
 @stack('js')

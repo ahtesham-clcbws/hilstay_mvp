@@ -17,7 +17,7 @@
 
                         <ul class="list-group list-group-borderless list-group-horizontal list-group-flush no-gutters row">
                             @foreach ($terms as $key => $term)
-                                @if ($key <= 2)
+                                @if ($key <= 3)
                                     @php $translate_term = $term->translate() @endphp
                                     <li
                                         class="col-md-4 list-group-item item {{ $term->slug }} term-{{ $term->id }} mb-3">
@@ -37,7 +37,7 @@
                         <div class="collapse" id="more_term_{{ intval($attribute['parent']->id) + 2000 }}">
                             <ul class="list-group list-group-borderless list-group-horizontal list-group-flush no-gutters row">
                                 @foreach ($terms as $key => $term)
-                                    @if ($key > 2)
+                                    @if ($key > 3)
                                         @php $translate_term = $term->translate() @endphp
                                         <li
                                             class="col-md-4 list-group-item item {{ $term->slug }} term-{{ $term->id }} mb-3">

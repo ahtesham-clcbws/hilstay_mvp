@@ -77,7 +77,7 @@
     </ul>
 </div>
 @if($row->getGallery())
-    <div class="position-relative">
+    <div class="position-relative d-none d-md-block">
         <div id="sliderSyncingNav" class="travel-slick-carousel u-slick mb-2"
              data-infinite="true"
              data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
@@ -118,32 +118,45 @@
             @endforeach
         </div>
     </div>
+    {{-- mobile slider --}}
+    <div class="d-block d-md-none splide">
+        <div
+            class="splide__track row align-items-center justify-content-center overflow-hidden">
+            <div class="splide__list">
+                @foreach($row->getGallery() as $key=>$item)
+                    <div class="js-slide splide__slide">
+                        <img class="img-fluid border-radius-3" src="{{$item['large']}}" alt="{{ __("Gallery") }}">
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
 @endif
 <div class="py-4 border rounded  mb-4 mt-4">
-    <ul class="list-group list-group-borderless list-group-horizontal flex-center-between text-center mx-md-4 flex-wrap">
-        <li class="list-group-item text-lh-sm ">
+    <ul class="list-group list-group-borderless list-group-horizontal flex-center-between text-center mx-md-4">
+        <li class="list-group-item p-2 text-lh-sm ">
             <i class="icofont-heart-beat text-primary font-size-50 mb-1 "></i>
-            <div class="text-gray-1">
+            <div class="text-gray-1 text-wrap text-break">
                 {{ $row->getNumberWishlistInService() }}
                 {{ __("Wishlist") }}</div>
         </li>
         @if($row->start_time)
-            <li class="list-group-item text-lh-sm ">
+            <li class="list-group-item p-2 text-lh-sm ">
                 <i class="icofont-wall-clock text-primary font-size-50 mb-1 "></i>
-                <div class="text-gray-1"> {{ __("Start Time") }}: {{ $row->start_time }}</div>
+                <div class="text-gray-1 text-wrap text-break"> {{ __("Start Time") }}: {{ $row->start_time }}</div>
             </li>
         @endif
         @if($row->duration)
-            <li class="list-group-item text-lh-sm ">
+            <li class="list-group-item p-2 text-lh-sm ">
                 <i class="icofont-infinite text-primary font-size-50 mb-1 "></i>
-                <div class="text-gray-1"> {{ __("Duration") }}: {{duration_format($row->duration)}} </div>
+                <div class="text-gray-1 text-wrap text-break"> {{ __("Duration") }}: {{duration_format($row->duration, true)}} </div>
             </li>
         @endif
         @if(!empty($row->location->name))
             @php $location =  $row->location->translate() @endphp
-            <li class="list-group-item text-lh-sm ">
+            <li class="list-group-item p-2 text-lh-sm ">
                 <i class="icofont-island-alt text-primary font-size-50 mb-1 "></i>
-                <div class="text-gray-1">{{$location->name ?? ''}} </div>
+                <div class="text-gray-1 text-wrap text-break">{{$location->name ?? ''}} </div>
             </li>
         @endif
     </ul>

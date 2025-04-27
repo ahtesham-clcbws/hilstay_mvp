@@ -29,3 +29,9 @@ storage/installed
 vendor/_laravel_ide/*
 
 *.zip
+.editorconfig
+.babelrc
+.gitattributes
+.prettierrc
+changelog.md
+mt-changelog.txt
