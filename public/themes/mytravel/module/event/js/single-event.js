@@ -211,7 +211,7 @@
             for(var k in bravo_booking_data){
                 this[k] = bravo_booking_data[k];
             }
-            console.log("Create!!!!!");
+            // console.log("Create!!!!!");
         },
         mounted(){
             var me = this;

@@ -3,8 +3,9 @@
 @endphp
 <div class="card transition-3d-hover shadow-hover-2 item-loop {{$wrap_class ?? ''}} overflow-hidden">
     <div class="position-relative">
-        <a @if(!empty($blank)) target="_blank" @endif href="{{$row->getDetailUrl($include_param ?? true)}}" class="d-block gradient-overlay-half-bg-gradient-v5">
-            <img class="card-img-top" src="{{$row->image_url}}" alt="{!! clean($translation->title) !!}">
+        <a @if(!empty($blank)) target="_blank" @endif href="{{$row->getDetailUrl($include_param ?? true)}}" class="d-block gradient-overlay-half-bg-gradient-v5"
+            style="aspect-ratio: 4/3 !important; overflow: hidden;">
+            <img class="card-img-top" src="{{$row->image_url}}" alt="{!! clean($translation->title) !!}" style="object-fit: cover !important;">
         </a>
         <div class="position-absolute top-0 right-0 pt-4 pr-3 btn-wishlist">
             <button type="button" class="p-0 btn btn-sm btn-icon text-white rounded-circle service-wishlist {{$row->isWishList()}}" data-id="{{$row->id}}" data-type="{{$row->type}}" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="{{ __("Save for later") }}">

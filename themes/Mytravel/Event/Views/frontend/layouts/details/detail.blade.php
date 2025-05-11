@@ -57,9 +57,9 @@
                 <i class="flaticon-like font-size-18 text-dark"></i>
             </span>
         </li>
-        <li class="list-group-item px-1 border-0">
+        <li class="list-group-item px-1 border-0 dropdown">
             <a id="shareDropdownInvoker{{$row->id}}"
-               class="dropdown-nav-link dropdown-toggle d-flex height-45 width-45 border rounded border-width-2 flex-content-center"
+               class="dropdown-nav-link dropdown-toggle d-flex height-45 width-45 border rounded border-width-2 flex-content-center" data-bs-toggle="dropdown"
                href="javascript:;" role="button" aria-controls="shareDropdown{{$row->id}}" aria-haspopup="true" aria-expanded="false" data-unfold-event="hover"
                data-unfold-target="#shareDropdown{{$row->id}}" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
                 <i class="flaticon-share font-size-18 text-dark"></i>
@@ -77,7 +77,8 @@
     </ul>
 </div>
 @if($row->getGallery())
-    <div class="position-relative d-none d-md-block">
+{{-- d-md-block --}}
+    <div class="position-relative d-none ">
         <div id="sliderSyncingNav" class="travel-slick-carousel u-slick mb-2"
              data-infinite="true"
              data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
@@ -119,13 +120,13 @@
         </div>
     </div>
     {{-- mobile slider --}}
-    <div class="d-block d-md-none splide">
+    <div class="d-block  splide">
         <div
             class="splide__track row align-items-center justify-content-center overflow-hidden">
             <div class="splide__list">
                 @foreach($row->getGallery() as $key=>$item)
-                    <div class="js-slide splide__slide">
-                        <img class="img-fluid border-radius-3" src="{{$item['large']}}" alt="{{ __("Gallery") }}">
+                    <div class="js-slide splide__slide" style="aspect-ratio: 16/9 !important; overflow: hidden;">
+                        <img class="img-fluid border-radius-3" style="object-fit: cover !important;" src="{{$item['large']}}" alt="{{ __("Gallery") }}">
                     </div>
                 @endforeach
             </div>
@@ -155,7 +156,8 @@
         @if(!empty($row->location->name))
             @php $location =  $row->location->translate() @endphp
             <li class="list-group-item p-2 text-lh-sm ">
-                <i class="icofont-island-alt text-primary font-size-50 mb-1 "></i>
+                <img class="cofont-island-alt text-primary font-size-50 mb-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM1BMVEVHcEwQOBUQOBUQOBUQOBUQOBUQOBUQOBUQOBUQOBUQOBUQOBUQOBUQOBUQOBUQOBUQOBU26PG9AAAAEHRSTlMABQ4cKzxKXneKqcLV4Oz3/hz0rQAAAeVJREFUeNrFlNtuhDAMRO1cnKvj+f+vLaTdlopkd/vU84CEyNF4IIT+D/ZRUpLomRY4uuFT+UY8vcblDsDGgQHWkqMXxAZYyxIOpDQDWqCnJIVVcd+RUg1dnhoD+msSdkkxEm0RRY/0G5YOjbTB99O4ERXN0xIuGLIc15DXRlAUXj6p0EAryu4BxYG8bjJDNjHN0Z1oJre1UrI/22AsBuAE9T93MQUizgZUTxQG0qrKDGfvmciVgS4uG6Yzh6Y7FZXJFdXiuBgArYae6nQK6lo5DABWiqGXAaBH8tNxtfJSOY3eMde6BqgQ8ZcjvOxSDC1EPQ3ONo2DT4cWZACHwcV+G8RbJwHoN+ORY7LeFW1pbD8l+f4w6GpMCrqjO5yvGZEuuIa63uObjN1+mTHXHuEyfN79Fq5eMkS7sD/g3VyT/JMhCmiqXZsnkjnXEh8uhhk0N6gnruiedlyMXAw9t0OJA4V2+P5jEOfTqf4MCbSDy7fB8bNX4hmyJ8SHIaoyc2Q2eco0ziumg2GW6ClRMc4M4OGguhfKQHOi1g5Mxc8z/AUZVjs0MJ/Lq1mmV7iKA/XzlWOO9ZLQZ40wDwE0T28wl44DzFPpLWTgCxV6D05fzkhE7zt/NIino4n+RNIu9EdCoH/lA18qH1gYHX5WAAAAAElFTkSuQmCC" />
+                {{-- <i class="icofont-island-alt text-primary font-size-50 mb-1 "></i> --}}
                 <div class="text-gray-1 text-wrap text-break">{{$location->name ?? ''}} </div>
             </li>
         @endif

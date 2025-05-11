@@ -35,3 +35,4 @@ vendor/_laravel_ide/*
 .prettierrc
 changelog.md
 mt-changelog.txt
+themes/themes.zip

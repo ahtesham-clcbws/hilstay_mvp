@@ -147,7 +147,7 @@
         </div>
 	</div>
 	<script>
-        var save_cookie_url = '{{route('core.cookie.check')}}';
+        var save_cookie_url = '{{route("core.cookie.check")}}';
 	</script>
 	<script src="{{ asset('js/cookie.js?_ver='.config('app.asset_version')) }}"></script>
 @endif

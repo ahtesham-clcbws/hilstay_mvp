@@ -75,8 +75,8 @@
                         class="splide__track row align-items-center justify-content-center overflow-hidden">
                         <div class="splide__list lightboxGallery">
                             @foreach ($row->getGallery() as $key => $item)
-                            <a href="<?= $item['large'] ?>" target="_blank" class="splide__slide">
-                                <img class="w-100" src="<?= $item['thumb'] ?>" alt=".." />
+                            <a href="<?= $item['large'] ?>" target="_blank" class="splide__slide" style="aspect-ratio: 4/3 !important; overflow: hidden;">
+                                <img class="w-100" src="<?= $item['thumb'] ?>" alt=".." style="object-fit: cover !important;" />
                             </a>
                             @endforeach
                         </div>
